@@ -1,3 +1,95 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// navtop
+
+.navtop {position: absolute; top: 0; left: 0; z-index: 100; width: 100%; padding: 10px 0 0 0; margin: 0; background-color: #fff;}
+.navtop ul {position: relative; height: auto; width: 100%; max-width: 800px; list-style-type: none; margin: 0; padding: 0;}
+.navtop ul li {position: relative; float: left; text-align: center; width: 25%; height: auto; padding: 0; margin: 0; background-color: #fff; cursor: pointer;}
+.navtop ul li span {position: relative; color: #e8eae9; width: 100%; text-align: center; font-size: 18px; line-height: 24px; padding: 10px auto; margin: 10px 0; }
+.circletop {position: relative; width: 25px; height: 25px; border-radius: 50%; margin:5px auto 10px auto; padding: 0;}
+.logoimage {float: left; width: 100%; margin-top: -10px;}
+#logoholder {background-color:rgba(232,234,233,1); cursor: default; padding-bottom: 10px;}
+
+.jpblue {background-color:rgba(33,111,144,1);}
+.jppink {background-color:rgba(184,39,113,1);}
+.jplightblue {background-color:rgba(162,200,222,1);}
+
+.jpblue-color {color: #216f90;}
+.jppink-color {color: #b82771;}
+.jplightblue-color {color: #a2c8de;}
+
+.body {font-family: 'Century Gothic', Sans-Serif; font-weight: 700;}
+
+// javascript
+.nodisplay {display: none;}
+#quotebutton.jpblue-color span {color: #216f90; font-weight: 700;}
+#handsbutton.jppink-color span {color: #b82771; font-weight: 700;}
+#learnbutton.jplightblue-color span {color: #a2c8de; font-weight: 700;}
+#quotebutton.selectedtab {padding-bottom: 30px; margin-bottom: -30px; }
+#handsbutton.selectedtab {padding-bottom: 30px; margin-bottom: -30px;}
+#learnbutton.selectedtab {padding-bottom: 30px; margin-bottom: -30px;}
+
+// main layout
+#mainlayout {float: left; width: 100%; height: 100%; padding: 50px 0 50px 0;}
+
+// quote layout
+#quotelayout {position: relative; width: 100%; height: auto; margin: 0; padding: 25px 5%;}
+.header1 {position: relative; float: left; color: #fff; font-size: 60px; line-height: 62px; text-align: left; width: auto; min-width: 45%; margin: 75px 5% 0 0;}
+.bigword {font-size: 128px;}
+.header2 {position: relative; float: left; color: #fff; width: auto; min-width: 0%; margin: 50px 0 25px 0; font-size: 60px; line-height: 50px; text-align: left;}
+.smallword {font-size: 36px;}
+.regbutton {background-color: #fff; cursor: pointer; text-align: center; color: #b82771; padding: 5px 10px; margin: 10px auto 10px 0; width: 70%; font-size: 36px;}
+
+.deadlinebox {position: relative; float: right; clear: both; width: auto; height: auto; margin: 25px 0; padding: 0; text-align: right; color: #e8eae9;}
+.deadlinebox2 {float: left; min-width: 50%; padding: 0 25%;}
+.deadline {position: relative;  float: left; font-size: 36px; line-height: 38px; font-weight: 400;}
+.deadlinedate {font-weight: 700;}
+.dividerline {float: left; height: 3px; width: 30%; margin: 25px auto 25px 25%; clear: both; background-color:rgba(232,234,233,1);}
+.dateremaining {position: relative; float: left; font-size: 30px; font-style: italic; text-align: right;}
+#notready {position: relative; float: left; background-color: #fff; color: #216f90; padding: 5px 15px; margin: 25px auto 25px 0; font-size: 36px; width: 50%; text-align: center;}
+
+// hands layout
+#handslayout {position: relative; width: 100%; height: auto; margin: 0; padding: 25px 5%;}
+.handsbox {position: relative; text-align: center; width: 100%; height: auto; margin: 50px 0; padding: 0;}
+.handsheader {position: relative; text-align: center; font-size: 60px; color: #fff; font-family: "ff-enzo-web",sans-serif; text-shadow: 4px 4px #000; font-weight: 700; margin: 10px 0;}
+.handspara {position: relative; text-align: center; font-size: 30px; line-height: 32px; font-family: 'Century Gothic', Sans-Serif; font-weight: 400; width: 60%; margin: 0 20%; color: #fff;}
+.regbutton2 {background-color: #fff; text-align: center; color: #216f90; padding: 5px 10px; margin: 10px auto; width: 50%; font-size: 36px; font-weight: 700;}
+.handsgallery {float: left; width: 100%; padding: 0; margin: 10px 0 50px 0; height: auto;}
+.handspic {position: relative; width: 20%; float: left; height: auto;}
+.galleryimage {float: left; width: 100%; height: auto;}
+
+// learn layout
+#learnlayout {position: relative; width: 100%; height: auto; margin: 0; padding: 25px 5%;}
+.learnbox {position: relative; float: left; text-align: left; width: 80%; margin: 50px 10%; padding: 0; font-family: 'Century Gothic', Sans-Serif; font-weight: 700;}
+.learnheader {position: relative; text-align: left; width: 100%; font-size: 40px; line-height: 40px; color: #fff;}
+.smallword2 {font-size: 24px; font-weight: 400;}
+.bigword2 {font-size: 80px;}
+.learnpara {position: relative; text-align: left; color: #000; margin: 10px 0; font-size: 30px; line-height: 32px; font-weight: 400;}
+.learnlink {color: #b82771; text-decoration: underline;}
+.learnquizbox {position: relative; height: 400px; width: 500px; margin: 50px auto; padding: 0 0 0 0;}
+.learnquiz {position: relative; height: 400px; width: 400px; margin: 0; background-color: #fff;}
+.learninfo {position: relative; width: 100%; height: auto; margin: 0; padding: 0;}
+.answerbox {position: absolute; top: 0; right: -100px; width: 100px; height: 400px; padding: 0; margin: 0;}
+.truebox {position: relative; width: 100px; height: 200px; text-align: center; font-size: 24px; padding: 88px 0; color: #fff; vertical-align: center; background-color:rgba(33,111,144,1);}
+.falsebox {position: relative; width: 100px; height: 200px; text-align: center; font-size: 24px; padding: 88px 0; color: #fff; vertical-align: center; background-color:rgba(184,39,113,1);}
+.learnmorebox {position: absolute; bottom: -30px; width: 100%; height: auto;}
+.sharebox {position: relative; font-size: 24px; color: #000; font-weight: 400;}
+.learncountbox {position: absolute; bottom: -30px; right: -100px; color: #e8eae9; font-size: 24px; font-style: italic; font-weight: 400;}
+
+// footer nav
+.navfooter {position: fixed; bottom: 0; left: 0; width: 100%; margin: 0; padding: 15px 5%; background-color:rgba(232,234,233,1); color: #000;}
+.checklist {position: relative; width: 300px; height: 5px; background-color: #000; overflow: visible; margin: 25px auto;}
+.checklist .circletop {background-color: #000; width: 30px; height: 30px; border-radius: 50%; border: 5px solid #e8eae9;}
+.contacttoday {position: absolute; right:0; bottom:0; color: #000; font-size: 18px; font-weight: 700; margin: 25px;}
+#circlelist1 {position: absolute; top: -17.5px; left: -5px;}
+#circlelist2 {position: absolute; top: -17.5px; left: 137.5px;}
+#circlelist3 {position: absolute; top: -17.5px; right: -5px;}
+
+// hidden form
+#hiddenform {position: absolute; opacity: 0; background-color: #fff; z-index: 0; top: 0; left: 0; width: 80%; height: auto; margin: 50px 10%;}
+#hiddenform.active {position: absolute; opacity: 1; background-color: #fff; z-index: 1000; top: 0; left: 0; width: 80%; height: auto; margin: 50px 10%;}
+
+html.embed.firefox body#public.noI div#container.ltr form#form1.wufoo.topLabel.page1 {font-family: 'Century Gothic', Sans-Serif; font-weight: 700;}
+html.embed.firefox body#public.noI div#container.ltr form#form1.wufoo.topLabel.page1 ul li.buttons div a {display: none !important;}
