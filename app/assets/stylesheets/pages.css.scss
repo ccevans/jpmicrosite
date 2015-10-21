@@ -89,8 +89,8 @@
 #circlelist3 {position: absolute; top: -17.5px; right: -5px;}
 
 // hidden form
-#wrapperform {opacity: 0; z-index: 0; position: fixed; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(0,0,0,.9); margin: 0;}
-#wrapperform.active {opacity: 1; z-index: 999; position: fixed; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(0,0,0,.9); margin: 0;}
+#wrapperform {opacity: 0; z-index: 0; position: fixed; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(33,111,144,.9); margin: 0;}
+#wrapperform.active {opacity: 1; z-index: 999; position: fixed; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(33,111,144,.9); margin: 0;}
 #hiddenform {position: absolute; opacity: 0; background-color: #fff; z-index: 0; top: 0; left: 0; width: 80%; height: auto; margin: 50px 10%;}
 #hiddenform.active {position: absolute; opacity: 1; background-color: #fff; z-index: 1000; top: 0; left: 0; width: 80%; height: auto; margin: 100px 10% 0 10%;}
 
@@ -228,13 +228,8 @@ input.text, input.search, textarea.textarea {
 	#circlelist3 {position: absolute; top: -17.5px; right: -5px;}
 
 	// hidden form
-	#wrapperform {opacity: 0; z-index: 0; position: fixed; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(0,0,0,.9); margin: 0;}
-	#wrapperform.active {opacity: 1; z-index: 999; position: fixed; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(0,0,0,.9); margin: 0;}
 	#hiddenform {position: absolute; opacity: 0; background-color: #fff; z-index: 0; top: 0; left: 0; width: 80%; height: auto; margin: 50px 10%;}
 	#hiddenform.active {position: absolute; opacity: 1; background-color: #fff; z-index: 1000; top: 0; left: 0; width: 80%; height: auto; margin: 100px 10% 0 10%;}
-
-	html.embed.firefox body#public.noI div#container.ltr form#form1.wufoo.topLabel.page1 {font-family: 'Century Gothic', Sans-Serif; font-weight: 700;}
-	html.embed.firefox body#public.noI div#container.ltr form#form1.wufoo.topLabel.page1 ul li.buttons div a {display: none !important;}
 
 	html.embed.firefox body#public.noI div#container.ltr form#form1.wufoo.topLabel.page1 ul li#fo1li1.notranslate span input#Field1.field.text.fn {
 	    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
