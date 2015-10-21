@@ -80,7 +80,7 @@
 .learncountbox {position: absolute; bottom: -30px; right: -100px; color: #e8eae9; font-size: 24px; font-style: italic; font-weight: 400;}
 
 // footer nav
-.navfooter {position: absolute; bottom: 0; left: 0; height: auto; width: 100%; margin: 0; padding: 15px 5%; background-color:rgba(232,234,233,1); color: #000;}
+.navfooter {position: fixed; bottom: 0; left: 0; height: auto; width: 100%; margin: 0; padding: 15px 5%; background-color:rgba(232,234,233,1); color: #000;}
 .checklist {position: relative; width: 300px; height: 5px; background-color: rgba(0,0,0,1); opacity: 1; overflow: visible; margin: 5px auto;}
 .checklist .circletop {background-color: rgba(0,0,0, 1); width: 30px; height: 30px; border-radius: 50%; border: 5px solid rgba(232, 234, 233, 1);}
 .contacttoday {position: relative; float: left; color: #000; font-size: 18px; font-weight: 700; margin: 5px 25px;}
@@ -193,7 +193,7 @@ input.text, input.search, textarea.textarea {
 	// hands layout
 	#handslayout {position: relative; width: 100%; height: auto; margin: 0; padding: 25px 5%;}
 	.handsbox {position: relative; text-align: center; width: 100%; height: auto; margin: 10px 0; padding: 0;}
-	.handsheader {position: relative; text-align: center; font-size: 40px; color: #fff; font-family: "ff-enzo-web",sans-serif; text-shadow: 4px 4px #000; font-weight: 700; margin: 10px 0;}
+	.handsheader {position: relative; text-align: center; font-size: 30px; color: #fff; font-family: "ff-enzo-web",sans-serif; text-shadow: 4px 4px #000; font-weight: 700; margin: 10px 0;}
 	.handspara {position: relative; text-align: center; font-size: 18px; line-height: 20px; font-family: 'Century Gothic', Sans-Serif; font-weight: 400; width: 60%; margin: 0 20%; color: #fff;}
 	.regbutton2 {background-color: #fff; text-align: center; color: #216f90; padding: 5px 10px; margin: 10px auto; width: 70%; font-size: 24px; font-weight: 700;}
 	.handsgallery {float: left; width: 100%; padding: 0; margin: 10px 0 25px 0; height: auto;}
@@ -208,15 +208,15 @@ input.text, input.search, textarea.textarea {
 	.bigword2 {font-size: 60px; line-height: 60px;}
 	.learnpara {position: relative; text-align: left; color: #000; margin: 10px 0; font-size: 18px; line-height: 20px; font-weight: 400;}
 	.learnlink {color: #b82771; text-decoration: underline;}
-	.learnquizbox {position: relative; float: left; height: 400px; width: 500px; margin: 0 0 0 -100px; padding: 0 0 0 0; transform: scale(.6);}
-	.learnquiz {position: relative; height: 400px; width: 400px; margin: 0; background-color: #fff;}
+	.learnquizbox {float: left; height: 240px; width: 300px; margin: 0 0 0 0; padding: 0 0 0 0;}
+	.learnquiz {position: relative; height: 240px; width: 240px; margin: 0; background-color: #fff;}
 	.learninfo {position: relative; width: 100%; height: auto; margin: 0; padding: 0;}
-	.answerbox {position: absolute; top: 0; right: -100px; width: 100px; height: 400px; padding: 0; margin: 0;}
-	.truebox {position: relative; width: 100px; height: 200px; text-align: center; font-size: 24px; padding: 88px 0; color: #fff; vertical-align: center; background-color:rgba(33,111,144,1);}
-	.falsebox {position: relative; width: 100px; height: 200px; text-align: center; font-size: 24px; padding: 88px 0; color: #fff; vertical-align: center; background-color:rgba(184,39,113,1);}
-	.learnmorebox {position: absolute; bottom: -30px; width: 100%; height: auto;}
-	.sharebox {position: relative; font-size: 24px; color: #000; font-weight: 400;}
-	.learncountbox {position: absolute; bottom: -30px; right: -100px; color: #e8eae9; font-size: 24px; font-style: italic; font-weight: 400;}
+	.answerbox {position: absolute; top: 0; right: -60px; width: 60px; height: 240px; padding: 0; margin: 0;}
+	.truebox {position: relative; width: 60px; height: 120px; text-align: center; font-size: 18px; padding: 51px 0; color: #fff; vertical-align: center; background-color:rgba(33,111,144,1);}
+	.falsebox {position: relative; width: 60px; height: 120px; text-align: center; font-size: 18px; padding: 51px 0; color: #fff; vertical-align: center; background-color:rgba(184,39,113,1);}
+	.learnmorebox {position: absolute; bottom: -24px; width: 100%; height: auto;}
+	.sharebox {position: relative; font-size: 18px; color: #000; font-weight: 400;}
+	.learncountbox {position: absolute; bottom: -24px; right: -60px; color: #e8eae9; font-size: 18px; font-style: italic; font-weight: 400;}
 
 	// footer nav
 	.navfooter {position: fixed; bottom: 0; left: 0; width: 100%; margin: 0; padding: 15px 5%; background-color:rgba(232,234,233,1); color: #000;}
