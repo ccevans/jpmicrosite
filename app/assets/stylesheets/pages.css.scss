@@ -172,7 +172,7 @@ input.text, input.search, textarea.textarea {
 	#learnbutton.selectedtab {padding-bottom: 10px; margin-bottom: -10px; transition: all 1s ease 0s;}
 
 	// main layout
-	#mainlayout2 {position: absolute; width: 100%; height: auto; padding: 50px 0 50px 0;}
+	#mainlayout2 {position: absolute; width: 100%; height: auto; padding: 50px 0 0 0;}
 
 	// quote layout
 	#quotelayout {position: relative; width: 100%; height: auto; margin: 0; padding: 25px 5%;}
@@ -228,8 +228,8 @@ input.text, input.search, textarea.textarea {
 	#circlelist3 {position: absolute; top: -17.5px; right: -5px;}
 
 	// hidden form
-	#hiddenform {position: absolute; opacity: 0; background-color: #fff; z-index: 0; top: 0; left: 0; width: 80%; height: auto; margin: 50px 10%;}
-	#hiddenform.active {position: absolute; opacity: 1; background-color: #fff; z-index: 1000; top: 0; left: 0; width: 80%; height: auto; margin: 100px 10% 0 10%;}
+	#hiddenform {position: absolute; opacity: 0; background-color: #fff; z-index: 0; top: 0; left: 0; width: 90%; height: auto; margin: 50px 5%;}
+	#hiddenform.active {position: absolute; opacity: 1; background-color: #fff; z-index: 1000; top: 0; left: 0; width: 90%; height: auto; margin: 50px 5% 0 5%;}
 
 	html.embed.firefox body#public.noI div#container.ltr form#form1.wufoo.topLabel.page1 ul li#fo1li1.notranslate span input#Field1.field.text.fn {
 	    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
