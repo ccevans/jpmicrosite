@@ -1,10 +1,14 @@
+<div id="sitemenu-icon">
+	<span class="line1"></span>
+	<span class="line3"></span>
+</div>
 <div class="navtop">
 	<ul>
 		<li id="logoholder">
 			<%= image_tag 'jplogo.jpg', :class => "logoimage" %>
 		</li>
 		<li id="quotebutton" class="jpblue-color selectedtab">
-			<span>Quote Now</span>
+			<span>Enroll Today</span>
 			<div class="circletop jpblue"></div>
 
 		</li>
@@ -20,34 +24,36 @@
 	</ul>
 
 </div>
-<div id="hiddenform" class="">
-	<div id="wufoo-z1yyisb01g70zdy">
-Fill out my <a href="https://ccevans.wufoo.com/forms/z1yyisb01g70zdy">online form</a>.
-</div>
+<div id="wrapperform">
+	<div id="hiddenform" class="">
+		<div id="wufoo-z1yyisb01g70zdy">
+	Fill out my <a href="https://ccevans.wufoo.com/forms/z1yyisb01g70zdy">online form</a>.
+	</div>
 
-<script>
-	$("#saveForm").click(function(){
-		$("#hiddenform").removeClass("active");
-	});
-</script>
+	<script>
+		$("#saveForm").click(function(){
+			$("#hiddenform").removeClass("active");
+		});
+	</script>
 
-<script type="text/javascript">var z1yyisb01g70zdy;(function(d, t) {
-var s = d.createElement(t), options = {
-'userName':'ccevans',
-'formHash':'z1yyisb01g70zdy',
-'autoResize':true,
-'height':'426',
-'async':true,
-'host':'wufoo.com',
-'header':'show',
-'ssl':true};
-s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
-s.onload = s.onreadystatechange = function() {
-var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-try { z1yyisb01g70zdy = new WufooForm();z1yyisb01g70zdy.initialize(options);z1yyisb01g70zdy.display(); } catch (e) {}};
-var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-})(document, 'script');</script>
-		
+	<script type="text/javascript">var z1yyisb01g70zdy;(function(d, t) {
+	var s = d.createElement(t), options = {
+	'userName':'ccevans',
+	'formHash':'z1yyisb01g70zdy',
+	'autoResize':true,
+	'height':'426',
+	'async':true,
+	'host':'wufoo.com',
+	'header':'show',
+	'ssl':true};
+	s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+	s.onload = s.onreadystatechange = function() {
+	var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+	try { z1yyisb01g70zdy = new WufooForm();z1yyisb01g70zdy.initialize(options);z1yyisb01g70zdy.display(); } catch (e) {}};
+	var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+	})(document, 'script');</script>
+			
+	</div>
 </div>
 
 <section id="mainlayout" class="jpblue">
@@ -63,11 +69,7 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
 			<span class="smallword">your health coverage today.</span>
 
 			<div id="qqbutton" class="regbutton">
-				Quick Quote
-			</div>
-
-			<div id="lmbutton" class="regbutton">
-				Learn More
+				Enroll Today
 			</div>
 
 		</div>
@@ -79,11 +81,14 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
 				<span class="deadlinedate">Jan 31, 2016</span>
 			</div>
 				<div class="dividerline"></div>
+				
 				<div class="dateremaining">
-					62 days and 4 hrs remaining
+					<span id="wrapper2">
+				<span id="clock1"></span>
+				</span> remaining
 				</div>
 
-				<div id="notready">Not Ready?</div>
+				<div id="notready">Learn More</div>
 		</div>
 
 			
@@ -218,11 +223,25 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
 
 </div>
 
-
+<script type="text/javascript">
+	$('#wrapper2').countdown('2015/11/1', function(event) {
+	$('#clock1').html(event.strftime('%-D day%!d'));
+	});
+</script>
 
 <script>
+
 	$("#qqbutton").click(function(){
 		$("#hiddenform").addClass("active");
+		$("#wrapperform").addClass("active");
+		$("#sitemenu-icon").addClass("active");
+		$("#sitemenu-icon").addClass("open");
+	});
+	$("#sitemenu-icon").click(function(){
+		$("#hiddenform").removeClass("active");
+		$("#wrapperform").removeClass("active");
+		$("#sitemenu-icon").removeClass("open");
+		$("#sitemenu-icon").removeClass("active");
 	});
 
 	$("#saveForm").click(function(){
