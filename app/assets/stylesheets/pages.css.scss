@@ -163,8 +163,8 @@ input.text, input.search, textarea.textarea {
 	.navtop ul li {position: relative; float: left; text-align: center; width: 25%; height: auto; padding: 0; margin: 0; background-color: #fff; cursor: pointer;}
 	.navtop ul li span {position: relative; color: #e8eae9; width: 100%; text-align: center; font-size: 10px; line-height: 10px; padding: 5px auto; margin: 5px 0; }
 	.circletop {position: relative; width: 15px; height: 15px; border-radius: 50%; margin:0px auto 5px auto; padding: 0;}
-	.logoimage {float: left; width: 100%; margin-top: -5px;}
-	#logoholder {background-color:rgba(232,234,233,1); cursor: default; padding-bottom: 5px;}
+	.logoimage {float: left; width: 100%; margin-top: 0px;}
+	#logoholder {background-color:rgba(232,234,233,1); cursor: default; padding-bottom: 0px;}
 
 	// javascript
 	#quotebutton.selectedtab {padding-bottom: 10px; margin-bottom: -10px; transition: all 1s ease 0s;}
@@ -192,23 +192,23 @@ input.text, input.search, textarea.textarea {
 
 	// hands layout
 	#handslayout {position: relative; width: 100%; height: auto; margin: 0; padding: 25px 5%;}
-	.handsbox {position: relative; text-align: center; width: 100%; height: auto; margin: 50px 0; padding: 0;}
-	.handsheader {position: relative; text-align: center; font-size: 60px; color: #fff; font-family: "ff-enzo-web",sans-serif; text-shadow: 4px 4px #000; font-weight: 700; margin: 10px 0;}
-	.handspara {position: relative; text-align: center; font-size: 30px; line-height: 32px; font-family: 'Century Gothic', Sans-Serif; font-weight: 400; width: 60%; margin: 0 20%; color: #fff;}
-	.regbutton2 {background-color: #fff; text-align: center; color: #216f90; padding: 5px 10px; margin: 10px auto; width: 50%; font-size: 36px; font-weight: 700;}
-	.handsgallery {float: left; width: 100%; padding: 0; margin: 10px 0 50px 0; height: auto;}
-	.handspic {position: relative; width: 20%; float: left; height: auto;}
+	.handsbox {position: relative; text-align: center; width: 100%; height: auto; margin: 10px 0; padding: 0;}
+	.handsheader {position: relative; text-align: center; font-size: 40px; color: #fff; font-family: "ff-enzo-web",sans-serif; text-shadow: 4px 4px #000; font-weight: 700; margin: 10px 0;}
+	.handspara {position: relative; text-align: center; font-size: 18px; line-height: 20px; font-family: 'Century Gothic', Sans-Serif; font-weight: 400; width: 60%; margin: 0 20%; color: #fff;}
+	.regbutton2 {background-color: #fff; text-align: center; color: #216f90; padding: 5px 10px; margin: 10px auto; width: 70%; font-size: 24px; font-weight: 700;}
+	.handsgallery {float: left; width: 100%; padding: 0; margin: 10px 0 25px 0; height: auto;}
+	.handspic {position: relative; width: 33.3%; float: left; height: auto;}
 	.galleryimage {float: left; width: 100%; height: auto;}
 
 	// learn layout
 	#learnlayout {position: relative; width: 100%; height: auto; margin: 0; padding: 25px 5%;}
-	.learnbox {position: relative; float: left; text-align: left; width: 80%; margin: 50px 10%; padding: 0; font-family: 'Century Gothic', Sans-Serif; font-weight: 700;}
-	.learnheader {position: relative; text-align: left; width: 100%; font-size: 40px; line-height: 40px; color: #fff;}
-	.smallword2 {font-size: 24px; font-weight: 400;}
-	.bigword2 {font-size: 80px;}
-	.learnpara {position: relative; text-align: left; color: #000; margin: 10px 0; font-size: 30px; line-height: 32px; font-weight: 400;}
+	.learnbox {position: relative; float: left; text-align: left; width: 100%; margin: 0px 0 25px 0; padding: 0; font-family: 'Century Gothic', Sans-Serif; font-weight: 700;}
+	.learnheader {position: relative; text-align: left; width: 100%; font-size: 30px; line-height: 30px; color: #fff;}
+	.smallword2 {font-size: 18px; font-weight: 400;}
+	.bigword2 {font-size: 60px; line-height: 60px;}
+	.learnpara {position: relative; text-align: left; color: #000; margin: 10px 0; font-size: 18px; line-height: 20px; font-weight: 400;}
 	.learnlink {color: #b82771; text-decoration: underline;}
-	.learnquizbox {position: relative; height: 400px; width: 500px; margin: 50px auto; padding: 0 0 0 0;}
+	.learnquizbox {position: relative; float: left; height: 400px; width: 500px; margin: 0 0 0 -100px; padding: 0 0 0 0; transform: scale(.6);}
 	.learnquiz {position: relative; height: 400px; width: 400px; margin: 0; background-color: #fff;}
 	.learninfo {position: relative; width: 100%; height: auto; margin: 0; padding: 0;}
 	.answerbox {position: absolute; top: 0; right: -100px; width: 100px; height: 400px; padding: 0; margin: 0;}
