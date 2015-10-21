@@ -32,7 +32,8 @@
 #learnbutton.selectedtab {padding-bottom: 30px; margin-bottom: -30px; transition: all 1s ease 0s;}
 
 // main layout
-#mainlayout {position: fixed; width: 100%; height: 100%; padding: 50px 0 100px 0; transition: all 1s ease 0s;}
+#mainlayout {position: fixed; width: 100%; height: 100%; padding: 0; transition: all 1s ease 0s;}
+#mainlayout2 {position: absolute; width: 100%; height: auto; padding: 50px 0 50px 0;}
 
 // quote layout
 #quotelayout {position: relative; width: 100%; height: auto; margin: 0; padding: 25px 5%;}
