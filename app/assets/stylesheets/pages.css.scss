@@ -33,7 +33,7 @@
 
 // main layout
 #mainlayout {position: fixed; width: 100%; height: 100%; padding: 0; transition: all 1s ease 0s;}
-#mainlayout2 {position: absolute; width: 100%; height: auto; padding: 50px 0 50px 0;}
+#mainlayout2 {position: absolute; width: 100%; height: auto; padding: 50px 0 0 0;}
 
 // quote layout
 #quotelayout {position: relative; width: 100%; height: auto; margin: 0; padding: 25px 5%;}
@@ -80,10 +80,10 @@
 .learncountbox {position: absolute; bottom: -30px; right: -100px; color: #e8eae9; font-size: 24px; font-style: italic; font-weight: 400;}
 
 // footer nav
-.navfooter {position: fixed; bottom: 0; left: 0; width: 100%; margin: 0; padding: 15px 5%; background-color:rgba(232,234,233,1); color: #000;}
+.navfooter {position: absolute; bottom: 0; left: 0; height: auto; width: 100%; margin: 0; padding: 15px 5%; background-color:rgba(232,234,233,1); color: #000;}
 .checklist {position: relative; width: 300px; height: 5px; background-color: rgba(0,0,0,1); opacity: 1; overflow: visible; margin: 5px auto;}
 .checklist .circletop {background-color: rgba(0,0,0, 1); width: 30px; height: 30px; border-radius: 50%; border: 5px solid rgba(232, 234, 233, 1);}
-.contacttoday {position: absolute; right:0; bottom:0; color: #000; font-size: 18px; font-weight: 700; margin: 5px 25px;}
+.contacttoday {position: relative; float: left; color: #000; font-size: 18px; font-weight: 700; margin: 5px 25px;}
 #circlelist1 {position: absolute; top: -17.5px; left: -5px;}
 #circlelist2 {position: absolute; top: -17.5px; left: 137.5px;}
 #circlelist3 {position: absolute; top: -17.5px; right: -5px;}
@@ -153,6 +153,8 @@ input.text, input.search, textarea.textarea {
     transform: rotate(45deg);
 }
 
+
+// mobile css
 @media screen and (max-width: 640px){
 	// navtop
 
