@@ -156,25 +156,25 @@ input.text, input.search, textarea.textarea {
 @media screen and (max-width: 640px){
 	// navtop
 
-	.navtop {position: absolute; top: 0; left: 0; z-index: 100; width: 100%; padding: 10px 0 0 0; margin: 0; background-color: #fff;}
+	.navtop {position: absolute; top: 0; left: 0; z-index: 100; width: 100%; padding: 0px 0 0 0; margin: 0; background-color: #fff;}
 	.navtop ul {position: relative; height: auto; width: 100%; max-width: 800px; list-style-type: none; margin: 0; padding: 0;}
 	.navtop ul li {position: relative; float: left; text-align: center; width: 25%; height: auto; padding: 0; margin: 0; background-color: #fff; cursor: pointer;}
-	.navtop ul li span {position: relative; color: #e8eae9; width: 100%; text-align: center; font-size: 18px; line-height: 24px; padding: 10px auto; margin: 10px 0; }
-	.circletop {position: relative; width: 25px; height: 25px; border-radius: 50%; margin:5px auto 10px auto; padding: 0;}
-	.logoimage {float: left; width: 100%; margin-top: -10px;}
-	#logoholder {background-color:rgba(232,234,233,1); cursor: default; padding-bottom: 10px;}
+	.navtop ul li span {position: relative; color: #e8eae9; width: 100%; text-align: center; font-size: 10px; line-height: 10px; padding: 5px auto; margin: 5px 0; }
+	.circletop {position: relative; width: 15px; height: 15px; border-radius: 50%; margin:0px auto 5px auto; padding: 0;}
+	.logoimage {float: left; width: 100%; margin-top: -5px;}
+	#logoholder {background-color:rgba(232,234,233,1); cursor: default; padding-bottom: 5px;}
 
 	// javascript
-	#quotebutton.selectedtab {padding-bottom: 15px; margin-bottom: -15px; transition: all 1s ease 0s;}
-	#handsbutton.selectedtab {padding-bottom: 15px; margin-bottom: -15px; transition: all 1s ease 0s;}
-	#learnbutton.selectedtab {padding-bottom: 15px; margin-bottom: -15px; transition: all 1s ease 0s;}
+	#quotebutton.selectedtab {padding-bottom: 10px; margin-bottom: -10px; transition: all 1s ease 0s;}
+	#handsbutton.selectedtab {padding-bottom: 10px; margin-bottom: -10px; transition: all 1s ease 0s;}
+	#learnbutton.selectedtab {padding-bottom: 10px; margin-bottom: -10px; transition: all 1s ease 0s;}
 
 	// main layout
 	#mainlayout2 {position: absolute; width: 100%; height: auto; padding: 50px 0 50px 0;}
 
 	// quote layout
 	#quotelayout {position: relative; width: 100%; height: auto; margin: 0; padding: 25px 5%;}
-	.header1 {position: relative; float: left; color: #fff; font-size: 30px; line-height: 32px; text-align: left; width: auto; min-width: 45%; margin: 75px 0% 0 0;}
+	.header1 {position: relative; float: left; font-weight: 700; color: #fff; font-size: 30px; line-height: 32px; text-align: left; width: auto; min-width: 45%; margin: 25px 0% 0 0;}
 	.bigword {font-size: 60px;}
 	.header2 {position: relative; float: left; color: #fff; width: auto; min-width: 0%; margin: 30px 0 15px 0; font-size: 30px; line-height: 30px; text-align: left;}
 	.smallword {font-size: 24px;}
@@ -182,10 +182,10 @@ input.text, input.search, textarea.textarea {
 
 	.deadlinebox {position: relative; float: right; clear: both; width: auto; height: auto; margin: 25px 0; padding: 0; text-align: right; color: #e8eae9;}
 	.deadlinebox2 {float: right; min-width: 50%; padding: 0 0 0 0;}
-	.deadline {position: relative;  float: right; font-size: 36px; line-height: 38px; font-weight: 400;}
+	.deadline {position: relative;  float: right; font-size: 24px; line-height: 26px; font-weight: 400;}
 	.deadlinedate {font-weight: 700;}
-	.dividerline {float: right; height: 3px; width: 30%; margin: 25px auto 25px 25%; clear: both; background-color:rgba(232,234,233,1);}
-	.dateremaining {position: relative; float: right; font-size: 30px; font-style: italic; text-align: right;}
+	.dividerline {float: right; height: 3px; width: 30%; margin: 15px auto 15px 25%; clear: both; background-color:rgba(232,234,233,1);}
+	.dateremaining {position: relative; float: right; font-size: 20px; font-style: italic; text-align: right;}
 	#notready {position: relative; float: right; background-color: #fff; cursor: pointer; text-align: center; color: #216f90; padding: 5px 10px; margin: 10px auto 10px 0; width: 70%; font-size: 24px;}
 
 	// hands layout
