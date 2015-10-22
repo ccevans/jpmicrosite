@@ -102,7 +102,21 @@
 		<div class="handsbox">
 			<div class="handsheader">#HANDSinHEALTH</div>
 			<div class="handspara">
-				Join JP Health in empowering other families in getting the right health protection.
+				Join JP Health in empowering other families in getting the right health insurance.
+			</div>
+
+			<div class="howitworks">
+
+				<div class="workspic">
+					<%= image_tag 'handsinhealth.jpg', :class => "galleryimage" %>
+				</div>
+				<div class="workspic">
+					<%= image_tag 'handsinhealth2.jpg', :class => "galleryimage" %>
+				</div>
+				<div class="workspic">
+					<%= image_tag 'handsinhealth3.jpg', :class => "galleryimage" %>
+				</div>
+
 			</div>
 
 			<div id="picbutton" class="regbutton2">
@@ -157,13 +171,14 @@
 
 			</div>
 			<div class="learnpara">
-				Since Obamacare, getting health insurance is easier and more affordable.  Learn more and share with others. <%= link_to "Make sure you got the right coverage at the cheapest price", "#", class: "learnlink" %>
+				Since Obamacare, getting health insurance is easier and more affordable.  Learn more and share with others. <%= link_to "Make sure you got the right coverage at an affordable price", "#", class: "learnlink" %>
 
 			</div>
 
 		<div class="learnquizbox">
 			<div class="learnquiz">
 				<div class="learninfo">
+					<%= image_tag 'jpfinancialquiz1.jpg', :class => "galleryimage" %>
 
 
 				</div>
@@ -230,6 +245,17 @@
 </script>
 
 <script>
+// Get an array of statements (images)
+//User clicks on answer
+//Button interactions
+//Check if answer is right or wrong
+//If right, congrats and explain
+//If wrong, sorry and explain why
+//keep current score of quiz
+//Create a next button
+//Next button goes to next question in group
+//Last question gives final score and ask user to sign up
+
 
 	$("#qqbutton").click(function(){
 		$("#hiddenform").addClass("active");

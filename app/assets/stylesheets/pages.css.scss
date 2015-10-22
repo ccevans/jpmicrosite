@@ -11,6 +11,7 @@
 .circletop {position: relative; width: 25px; height: 25px; border-radius: 50%; margin:5px auto 10px auto; padding: 0;}
 .logoimage {float: left; width: 100%; margin-top: -10px;}
 #logoholder {background-color:rgba(232,234,233,0); cursor: default; padding-bottom: 10px;}
+.clear {position: relative; width: 100%; float: left; clear: both;}
 
 .jpblue {background-color:rgba(33,111,144,1);}
 .jppink {background-color:rgba(184,39,113,1);}
@@ -43,7 +44,7 @@
 .smallword {font-size: 36px;}
 .regbutton {background-color: #fff; cursor: pointer; text-align: center; color: #b82771; padding: 5px 10px; margin: 10px auto 10px 0; width: 70%; font-size: 36px;}
 
-.deadlinebox {position: relative; float: right; clear: both; width: auto; height: auto; margin: 25px 0; padding: 0; text-align: right; color: #e8eae9;}
+.deadlinebox {position: relative; float: right; clear: both; height: auto; width: 100%; margin: 25px 0; padding: 0; text-align: right; color: #e8eae9;}
 .deadlinebox2 {float: right; min-width: 50%; padding: 0 50% 0 0;}
 .deadline {position: relative;  float: right; font-size: 36px; line-height: 38px; font-weight: 400;}
 .deadlinedate {font-weight: 700;}
@@ -56,10 +57,13 @@
 .handsbox {position: relative; text-align: center; width: 100%; height: auto; margin: 50px 0; padding: 0;}
 .handsheader {position: relative; text-align: center; font-size: 60px; color: #fff; font-family: "ff-enzo-web",sans-serif; text-shadow: 4px 4px #000; font-weight: 700; margin: 10px 0;}
 .handspara {position: relative; text-align: center; font-size: 30px; line-height: 32px; font-family: 'Century Gothic', Sans-Serif; font-weight: 400; width: 60%; margin: 0 20%; color: #fff;}
-.regbutton2 {background-color: #fff; text-align: center; color: #216f90; padding: 5px 10px; margin: 10px auto; width: 50%; font-size: 36px; font-weight: 700;}
+.regbutton2 {display: none; background-color: #fff; text-align: center; color: #216f90; padding: 5px 10px; margin: 10px auto; width: 50%; font-size: 36px; font-weight: 700;}
 .handsgallery {float: left; width: 100%; padding: 0; margin: 10px 0 50px 0; height: auto;}
 .handspic {position: relative; width: 20%; float: left; height: auto;}
 .galleryimage {float: left; width: 100%; height: auto;}
+.howitworks {position: relative; float: left; width: 100%; height: auto; margin: 25px 0;}
+.workspic {position: relative; width: 33.3%; float: left; height: auto;}
+
 
 // learn layout
 #learnlayout {position: relative; width: 100%; height: auto; margin: 0; padding: 25px 5%;}
@@ -72,9 +76,9 @@
 .learnquizbox {position: relative; height: 400px; width: 500px; margin: 50px auto; padding: 0 0 0 0;}
 .learnquiz {position: relative; height: 400px; width: 400px; margin: 0; background-color: #fff;}
 .learninfo {position: relative; width: 100%; height: auto; margin: 0; padding: 0;}
-.answerbox {position: absolute; top: 0; right: -100px; width: 100px; height: 400px; padding: 0; margin: 0;}
-.truebox {position: relative; width: 100px; height: 200px; text-align: center; font-size: 24px; padding: 88px 0; color: #fff; vertical-align: center; background-color:rgba(33,111,144,1);}
-.falsebox {position: relative; width: 100px; height: 200px; text-align: center; font-size: 24px; padding: 88px 0; color: #fff; vertical-align: center; background-color:rgba(184,39,113,1);}
+.answerbox {position: absolute; top: 0; right: -100px; width: 90px; height: 400px; padding: 0; margin: 0;}
+.truebox {position: relative; width: 100px; height: 195px; text-align: center; font-size: 24px; padding: 88px 0; color: #fff; vertical-align: center; background-color:rgba(33,111,144,1);}
+.falsebox {position: relative; width: 100px; height: 195px; margin-top: 10px; text-align: center; font-size: 24px; padding: 88px 0; color: #fff; vertical-align: center; background-color:rgba(184,39,113,1);}
 .learnmorebox {position: absolute; bottom: -30px; width: 100%; height: auto;}
 .sharebox {position: relative; font-size: 24px; color: #000; font-weight: 400;}
 .learncountbox {position: absolute; bottom: -30px; right: -100px; color: #e8eae9; font-size: 24px; font-style: italic; font-weight: 400;}
@@ -195,10 +199,12 @@ input.text, input.search, textarea.textarea {
 	.handsbox {position: relative; text-align: center; width: 100%; height: auto; margin: 10px 0; padding: 0;}
 	.handsheader {position: relative; text-align: center; font-size: 30px; color: #fff; font-family: "ff-enzo-web",sans-serif; text-shadow: 4px 4px #000; font-weight: 700; margin: 10px 0;}
 	.handspara {position: relative; text-align: center; font-size: 18px; line-height: 20px; font-family: 'Century Gothic', Sans-Serif; font-weight: 400; width: 60%; margin: 0 20%; color: #fff;}
-	.regbutton2 {background-color: #fff; text-align: center; color: #216f90; padding: 5px 10px; margin: 10px auto; width: 70%; font-size: 24px; font-weight: 700;}
+	.regbutton2 {display: none; background-color: #fff; text-align: center; color: #216f90; padding: 5px 10px; margin: 10px auto; width: 70%; font-size: 24px; font-weight: 700;}
 	.handsgallery {float: left; width: 100%; padding: 0; margin: 10px 0 25px 0; height: auto;}
 	.handspic {position: relative; width: 33.3%; float: left; height: auto;}
 	.galleryimage {float: left; width: 100%; height: auto;}
+	.howitworks {position: relative; float: left; width: 100%; height: auto; margin: 15px 0;}
+	.workspic {position: relative; width: 33.3%; float: left; height: auto;}
 
 	// learn layout
 	#learnlayout {position: relative; width: 100%; height: auto; margin: 0; padding: 25px 5%;}
@@ -211,9 +217,9 @@ input.text, input.search, textarea.textarea {
 	.learnquizbox {float: left; height: 240px; width: 300px; margin: 0 0 0 0; padding: 0 0 0 0;}
 	.learnquiz {position: relative; height: 240px; width: 240px; margin: 0; background-color: #fff;}
 	.learninfo {position: relative; width: 100%; height: auto; margin: 0; padding: 0;}
-	.answerbox {position: absolute; top: 0; right: -60px; width: 60px; height: 240px; padding: 0; margin: 0;}
-	.truebox {position: relative; width: 60px; height: 120px; text-align: center; font-size: 18px; padding: 51px 0; color: #fff; vertical-align: center; background-color:rgba(33,111,144,1);}
-	.falsebox {position: relative; width: 60px; height: 120px; text-align: center; font-size: 18px; padding: 51px 0; color: #fff; vertical-align: center; background-color:rgba(184,39,113,1);}
+	.answerbox {position: absolute; top: 0; right: -60px; width: 54px; height: 240px; padding: 0; margin: 0;}
+	.truebox {position: relative; width: 60px; height: 117px; text-align: center; font-size: 18px; padding: 51px 0; color: #fff; vertical-align: center; background-color:rgba(33,111,144,1);}
+	.falsebox {position: relative; width: 60px; height: 117px;  margin-top: 6px; text-align: center; font-size: 18px; padding: 51px 0; color: #fff; vertical-align: center; background-color:rgba(184,39,113,1);}
 	.learnmorebox {position: absolute; bottom: -24px; width: 100%; height: auto;}
 	.sharebox {position: relative; font-size: 18px; color: #000; font-weight: 400;}
 	.learncountbox {position: absolute; bottom: -24px; right: -60px; color: #e8eae9; font-size: 18px; font-style: italic; font-weight: 400;}
