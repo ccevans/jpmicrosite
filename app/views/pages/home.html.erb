@@ -76,6 +76,8 @@
 
 		</div>
 
+		<div class="clear"></div>
+
 		<div class="deadlinebox">
 		<div class="deadlinebox2">
 			<div class="deadline">
@@ -177,16 +179,16 @@
 
 		<div class="learnquizbox">
 			<div class="learnquiz">
-				<div class="learninfo">
-					<%= image_tag 'jpfinancialquiz1.jpg', :class => "galleryimage" %>
+				<div id="learninfo">
+					
 
 
 				</div>
-				<div class="answerbox">
-					<div class="truebox">
+				<div id="answerbox">
+					<div id="truebox">
 						TRUE
 					</div>
-					<div class="falsebox">
+					<div id="falsebox">
 						FALSE
 					</div>
 
@@ -246,7 +248,18 @@
 
 <script>
 // Get an array of statements (images)
+var arrayImage = ["jpfinancialquiz1.jpg", "jpfinancialquiz2.jpg", "jpfinancialquiz3.jpg", "jpfinancialquiz4.jpg", "jpfinancialquiz5.jpg", "jpfinancialquiz6.jpg", "jpfinancialquiz7.jpg", "jpfinancialquiz8.jpg", "jpfinancialquiz9.jpg", "jpfinancialquiz10.jpg"];
+console.log(arrayImage[0]);
+//create quiz loop
+
+//place image in array to html box
+//var image = arrayImage[0];
+
+//console.log(image2);
+
+//$('#learninfo').prepend()
 //User clicks on answer
+
 //Button interactions
 //Check if answer is right or wrong
 //If right, congrats and explain
