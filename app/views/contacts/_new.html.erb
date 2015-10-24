@@ -1,19 +1,19 @@
 <div align="center">
 
   <%= simple_form_for :contact, :url => {:action => :create, :controller=>"contacts"} do |f| %>
-    <%= f.input :name, :required => true %>
-    <%= f.input :email, :required => true %>
+    <%= f.input :name, :required => true, :placeholder => 'Full Name', autofocus: true %>
+    <%= f.input :email, :required => true, :placeholder => 'Email' %>
+    <%= f.input :phone, :required => true, :placeholder => 'Phone Number' %>
 
-    <%= f.input :message, :as => :text, :required => true %>
     <div class= "hidden">
       <%= f.input :nickname, :hint => 'Leave this field blank!' %>
     </div>
 
   <div class="form-group string required contact_name">
     <label class="string required control-label" for="contact_name">
-        Budget
+        Best Time To Call
     </label>
-    <%= f.collection_select :status, Contact::STATUS, :to_s, :humanize %>
+    <%= f.collection_select :status, Contact::BESTTIME, :to_s, :humanize %>
   </div><div class="clear"></div>
     <div>
       </br>

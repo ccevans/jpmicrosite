@@ -38,6 +38,14 @@
 			
 	</div>
 </div>
+<div id="wrapperform2">
+	<div id="hiddenform2" class="">
+		<h1>Let Us Help You</h1>
+		<h2>704.675.7270</h2>
+		<h2>1.800.481.1354</h2>	
+			
+	</div>
+</div>
 
 
 <div id="containerhands">
@@ -98,7 +106,7 @@
 					<div class="workspic">
 						<%= image_tag 'hand-illustration.png', :class => "galleryimage" %>
 					</div>
-					<div class="workspic">
+					<div class="workspic2">
 						<div class="workspara">
 						1. Gather your love ones and put your hands in for health.
 					</div>
@@ -109,7 +117,7 @@
 					<div class="workspic">
 						<%= image_tag 'camera-illustration.png', :class => "galleryimage" %>
 					</div>
-					<div class="workspic">
+					<div class="workspic2">
 						<div class="workspara">
 						2.Take a cool pic and make it your own.
 					</div>
@@ -119,7 +127,7 @@
 					<div class="workspic">
 						<%= image_tag 'profile-illustration.png', :class => "galleryimage" %>
 					</div>
-					<div class="workspic">
+					<div class="workspic2">
 						<div class="workspara">
 						3. Upload your pic and share using #HANDSinHEALTH
 					</div>
@@ -247,16 +255,19 @@
 			</div>
 
 	</div>
-</div>
-
 	<div class="navfooter">
 
 		<div class="contacttoday">
-			Contact Today
-
+			704.675.727 | 1.800.481.1354
 		</div>
+		<div class="sitedesign">
+			Site by <%= link_to '330Monday', 'http://www.330monday.com/' %>.
+		</div>	
 
 	</div>
+</div>
+
+
 
 
 <script type="text/javascript">
@@ -316,6 +327,12 @@ console.log(arrayImage[0]);
 		$("#sitemenu-icon").addClass("active");
 		$("#sitemenu-icon").addClass("open");
 	});
+	$("#bottomboxcontact").click(function(){
+		$("#hiddenform2").addClass("active");
+		$("#wrapperform2").addClass("active");
+		$("#sitemenu-icon").addClass("active");
+		$("#sitemenu-icon").addClass("open");
+	});
 	$("#qqbutton").click(function(){
 		$("#hiddenform").addClass("active");
 		$("#wrapperform").addClass("active");
@@ -325,6 +342,8 @@ console.log(arrayImage[0]);
 	$("#sitemenu-icon").click(function(){
 		$("#hiddenform").removeClass("active");
 		$("#wrapperform").removeClass("active");
+		$("#hiddenform2").removeClass("active");
+		$("#wrapperform2").removeClass("active");
 		$("#sitemenu-icon").removeClass("open");
 		$("#sitemenu-icon").removeClass("active");
 	});

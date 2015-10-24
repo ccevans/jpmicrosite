@@ -28,9 +28,19 @@
 #learnbutton:hover span {color: #589fb9; font-weight: 700;}
 #quotebutton:hover span {color: #007198; font-weight: 700;}
 
-
-
 .body {font-family: 'Century Gothic', Sans-Serif; font-weight: 700;}
+
+// form css
+
+form.simple_forml.contact {width: 50%; margin: 0 25%; font-family: 'Century Gothic', Sans-Serif;}
+form.simple_form.contact div.input {border: none; margin: 10px 0; background-color: none; width: 100%;}
+form.simple_form.contact div.input label {display: none; min-width: 20%; color: #fff; font-family: 'Century Gothic', Sans-Serif; font-weight: 700; font-size: 36px; line-height: 36px;}
+form.simple_form.contact div.input input {margin: 15px 0; font-family: 'Century Gothic', Sans-Serif; width: 100%; background-color: rgba(0,113,152,0); border: none; border-bottom: 2px solid #fff; font-size: 36px; line-height: 36px; color: #fff;}
+form.simple_form.contact div.input label.required abbr {display: none;}
+form.simple_form.contact div.form-group {text-align: center; font-size: 36px; color: #fff; font-family: 'Century Gothic', Sans-Serif;}
+form.simple_form.contact div.form-group select {border: none; background-color: rgba(0,0,0,0); border-bottom: 2px solid #fff;}
+form.simple_form.contact div input.btn.btn.btn-primary {font-size: 36px; border-radius: 0; padding: 10px 20px; background-color: rgba(255, 255, 255, 1); color: #007198;}
+form.simple_form.contact div.form-group select option {background-color: rbga(0,0,0,0); color: #fff; border: none;}
 
 // javascript
 .nodisplay {display: none;}
@@ -46,7 +56,7 @@
 #mainlayout2 {position: absolute; width: 100%; height: auto; padding: 50px 0 0 0;}
 #containerhands {z-index: 10; position: absolute; color: #fff; background-color:rgba(192,28,115,1); width: 100%; height: 100%; margin: 0 auto; transition: all 400ms linear 0s;}
 #handsinhealth {font-family: "verveine",sans-serif; background-color: rgba(0,0,0,.75); bottom: 0; cursor: pointer; left: 0; padding: 10px 0 5px; position: absolute; text-align: center; transition: background-color 200ms linear 0s; width: 100%; z-index:100; font-size: 40px; color: #fff;}
-#handsinhealth2 {font-family: "verveine",sans-serif; background-color: rgba(0,0,0,.75); bottom: 0; cursor: pointer; left: 0; padding: 10px 0 5px; position: absolute; text-align: center; transition: background-color 200ms linear 0s; width: 100%; z-index:100; font-size: 40px; color: #fff;}
+#handsinhealth2 {display: none; font-family: "verveine",sans-serif; background-color: rgba(0,0,0,.75); bottom: 0; cursor: pointer; left: 0; padding: 10px 0 5px; position: absolute; text-align: center; transition: background-color 200ms linear 0s; width: 100%; z-index:100; font-size: 40px; color: #fff;}
 
 #intro {height: 100%;}
 #intro .slide {background-attachment: fixed; background-position: center 0; background-repeat: no-repeat; background-size: cover; height: 0; overflow: hidden; position: absolute; transition: height 900ms cubic-bezier(.63, .64, .3, 1) 0s; width: 100%;}
@@ -75,6 +85,7 @@
 .galleryimage {position: relative; width: 100%; height: auto; margin: 25px 0;}
 .howitworks {position: relative; width: 100%; height: auto;}
 .workspic {position: relative; width: 100%; height: auto; float: left;}
+.workspic2 {position: relative; width: 100%; height: auto; float: left;}
 .handspara2 {position: relative; color: #fff; font-size: 36px; line-height: 38px; width: 80%; margin: 10px 10%; font-family: 'Century Gothic', Sans-Serif; font-weight: 400;}
 .hands3steps {position: relative; color: #000; font-family: "verveine",sans-serif; font-size: 48px; line-height: 48px; text-align: center;}
 .workspara {font-size: 48px; line-height: 48px; text-align: center; width: 100%; font-family: 'Century Gothic', Sans-Serif;}
@@ -108,7 +119,7 @@
 .regbutton {background-color: #fff; cursor: pointer; text-align: center; color: #b82771; text-shadow: 0px; padding: 132px 0; margin: 0; width: 300px; height: 300px; border-radius: 50%; font-size: 36px;}
 
 .deadlinebox {position: relative; float: left; clear: both; height: auto; width: 100%; margin: 0 0 50px 0; padding: 0; text-align: center; color: #fff;}
-.deadlinebox2 {width: 70%; margin: 0 15%; padding: 10px;}
+.deadlinebox2 {width: 96%; margin: 0 2%; padding: 10px;}
 .deadline {position: relative; font-size: 36px; line-height: 38px; font-weight: 400;}
 .deadlinedate {font-weight: 700;}
 .dividerline {height: 3px; width: 50%; margin: 25px 25%; clear: both; background-color:rgba(0,0,0,1);}
@@ -118,26 +129,35 @@
 #bottomboxenroll {position: relative; float: left; top: 0; left: 0; text-align: center; background-color:rgba(255,255,255,.95); font-size: 30px; line-height: 24px; width: 50%; height: auto; padding: 50px 5px; color: #c01c73; cursor: pointer; transition: all 500ms ease 0s;}
 #bottomboxcontact {position: relative; top: 0; margin-left: 50%; text-align: center; background-color:rgba(215,121,172,.95); font-size: 30px; line-height: 24px; width: 50%; height: auto; padding: 50px 5px; color: #000; cursor: pointer; transition: all 500ms ease 0s;}
 
-
 #bottomboxenroll:hover {background-color: rgba(0,0,0,.95); padding: 60px 5px; color: #fff; }
 #bottomboxcontact:hover {background-color: rgba(0,0,0,.95); padding: 60px 5px; color: #fff;}
 
 
 // footer nav
-.navfooter {display: none; position: fixed; bottom: 0; left: 0; height: auto; width: 100%; margin: 0; padding: 15px 5%; background-color:rgba(232,234,233,1); color: #000;}
+.navfooter {position: relative; float: left; height: auto; width: 100%; margin: 0; padding: 15px 5%; background-color:rgba(232,234,233,1); color: #000;}
 .checklist {position: relative; width: 300px; height: 5px; background-color: rgba(0,0,0,1); opacity: 1; overflow: visible; margin: 5px auto;}
 .checklist .circletop {background-color: rgba(0,0,0, 1); width: 30px; height: 30px; border-radius: 50%; border: 5px solid rgba(232, 234, 233, 1);}
 .contacttoday {position: relative; float: left; color: #000; font-size: 18px; font-weight: 700; margin: 5px 25px;}
 #circlelist1 {position: absolute; top: -17.5px; left: -5px;}
 #circlelist2 {position: absolute; top: -17.5px; left: 137.5px;}
 #circlelist3 {position: absolute; top: -17.5px; right: -5px;}
+.sitedesign {position: relative; float: right; color: #000; font-size: 18px; font-weight: 400; margin: 5px 25px;}
+.sitedesign a {color: #000;}
+.sitedesign a:hover {color: #000; font-weight: 700;}
 
 // hidden form
 #wrapperform {opacity: 0; z-index: 0; position: fixed; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(33,111,144,.9); margin: 0;}
 #wrapperform.active {opacity: 1; z-index: 999; position: fixed; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(33,111,144,.9); margin: 0;}
-#hiddenform {position: absolute; opacity: 0; background-color: #fff; z-index: 0; top: 0; left: 0; width: 80%; height: auto; margin: 50px 10%;}
-#hiddenform.active {position: absolute; opacity: 1; background-color: #fff; z-index: 1000; top: 0; left: 0; width: 80%; height: auto; margin: 100px 10% 0 10%;}
+#hiddenform {position: absolute; opacity: 0; background-color: none; z-index: 0; top: 0; left: 25%; width: 50%; height: auto; margin: 100px auto 0 auto;}
+#hiddenform.active {position: absolute; opacity: 1; background-color: none; z-index: 1000; top: 0; left: 25%; width: 50%; height: auto; margin: 100px auto 0 auto;}
 
+#wrapperform2 {opacity: 0; z-index: 0; position: fixed; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(215,121,172,.9); margin: 0;}
+#wrapperform2.active {opacity: 1; z-index: 999; position: fixed; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(215,121,172,.9); margin: 0;}
+#hiddenform2 {position: absolute; opacity: 0; background-color: none; z-index: 0; top: 0; left: 25%; width: 50%; height: auto; margin: 100px auto 0 auto;}
+#hiddenform2.active {position: absolute; opacity: 1; background-color: none; z-index: 1000; top: 0; left: 25%; width: 50%; height: auto; margin: 100px auto 0 auto;}
+
+#hiddenform2 h1 {text-align: center; font-size: 48px; color: #000;}
+#hiddenform2 h2 {text-align: center; font-size: 36px; color: #000;}
 
 // closed button 
 #sitemenu-icon {display: none;}
@@ -193,6 +213,19 @@
 	.circletop {position: relative; width: 15px; height: 15px; border-radius: 50%; margin:0px auto 5px auto; padding: 0;}
 	.logoimage {float: left; width: 100%; margin-top: 0px;}
 	#logoholder {background-color:rgba(232,234,233,1); cursor: default; padding-bottom: 0px;}
+	.navtop {position: fixed; top: 0; left: 0; z-index: 100; width: 100%; padding: 10px 0 0 0; margin: 0; background-color: #fff;}
+
+	// form css
+
+	form.simple_forml.contact {width: 100%; margin: 0 0%; font-family: 'Century Gothic', Sans-Serif;}
+	form.simple_form.contact div.input label {display: none; min-width: 20%; color: #fff; font-family: 'Century Gothic', Sans-Serif; font-weight: 700; font-size: 24px; line-height: 24px;}
+	form.simple_form.contact div.input input {margin: 15px 0; font-family: 'Century Gothic', Sans-Serif; width: 100%; background-color: rgba(0,113,152,0); border: none; border-bottom: 2px solid #fff; font-size: 24px; line-height: 24px; color: #fff;}
+	form.simple_form.contact div.form-group {text-align: center; font-size: 24px; color: #fff; font-family: 'Century Gothic', Sans-Serif;}
+	form.simple_form.contact div.form-group select {border: none; background-color: rgba(0,0,0,0); border-bottom: 2px solid #fff;}
+	form.simple_form.contact div input.btn.btn.btn-primary {font-size: 24px; border-radius: 0; padding: 5px 10px; background-color: rgba(255, 255, 255, 1); color: #007198;}
+	
+
+
 
 	// javascript
 	#quotebutton.selectedtab {padding-bottom: 10px; margin-bottom: -10px; transition: all 1s ease 0s;}
@@ -200,67 +233,95 @@
 	#learnbutton.selectedtab {padding-bottom: 10px; margin-bottom: -10px; transition: all 1s ease 0s;}
 
 	// main layout
-	#mainlayout2 {position: absolute; width: 100%; height: auto; padding: 50px 0 0 0;}
+	#handsinhealth {font-family: "verveine",sans-serif; background-color: rgba(0,0,0,.75); bottom: 0; cursor: pointer; left: 0; padding: 10px 0 5px; position: absolute; text-align: center; transition: background-color 200ms linear 0s; width: 100%; z-index:100; font-size: 20px; color: #fff;}
+	#handsinhealth2 {display: none; font-family: "verveine",sans-serif; background-color: rgba(0,0,0,.75); bottom: 0; cursor: pointer; left: 0; padding: 10px 0 5px; position: absolute; text-align: center; transition: background-color 200ms linear 0s; width: 100%; z-index:100; font-size: 20px; color: #fff;}
 
-	// quote layout
-	#quotelayout {position: relative; width: 100%; height: auto; margin: 0; padding: 25px 5%;}
-	.header1 {position: relative; float: left; font-weight: 700; color: #fff; font-size: 30px; line-height: 32px; text-align: left; width: auto; min-width: 45%; margin: 25px 0% 0 0;}
-	.bigword {font-size: 60px;}
-	.header2 {position: relative; float: left; color: #fff; width: auto; min-width: 0%; margin: 30px 0 15px 0; font-size: 30px; line-height: 30px; text-align: left;}
-	.smallword {font-size: 24px;}
-	.regbutton {background-color: #fff; cursor: pointer; text-align: center; color: #b82771; padding: 5px 10px; margin: 10px auto 10px 0; width: 70%; font-size: 24px;}
+	#topcontent {left: 0; margin: 0; width: 100%; position: absolute; text-align: center; top: 10%; z-index: 500;}
+	.logofont {font-size: 50px; color: #fff; font-family: "verveine",sans-serif; text-shadow: 2px 2px #000;}
+	.handspara {position: relative; text-shadow: 2px 2px #000; text-align: center; font-size: 30px; line-height: 32px; font-family: 'Century Gothic', Sans-Serif; font-weight: 700; width: 80%; margin: 0 10%; color: #fff;}
+	.topoptions {position: relative; margin: 50px 0; width: 100%;}
+	#topboxlearn {position: relative; float: left; top: 0; left: 0; text-align: center; background-color:rgba(88,159,185,.95); font-size: 20px; line-height: 20px; width: 50%; height: auto; padding: 40px 5px; color: #fff; cursor: pointer; transition: all 500ms ease 0s;}
+	#topboxenroll {position: relative; top: 0; margin-left: 50%; text-align: center; background-color:rgba(0,113,152,.95); font-size: 20px; line-height: 20px; width: 50%; height: auto; padding: 40px 5px; color: #fff; cursor: pointer; transition: all 500ms ease 0s;}
 
-	.deadlinebox {position: relative; float: right; clear: both; width: auto; height: auto; margin: 25px 0; padding: 0; text-align: right; color: #e8eae9;}
-	.deadlinebox2 {float: right; min-width: 50%; padding: 0 0 0 0;}
-	.deadline {position: relative;  float: right; font-size: 24px; line-height: 26px; font-weight: 400;}
-	.deadlinedate {font-weight: 700;}
-	.dividerline {float: right; height: 3px; width: 30%; margin: 15px auto 15px 25%; clear: both; background-color:rgba(232,234,233,1);}
-	.dateremaining {position: relative; float: right; font-size: 20px; font-style: italic; text-align: right;}
-	#notready {position: relative; float: right; background-color: #fff; cursor: pointer; text-align: center; color: #216f90; padding: 5px 10px; margin: 10px auto 10px 0; width: 70%; font-size: 24px;}
+	#topboxlearn:hover {background-color: rgba(0,0,0,.95); padding: 50px 5px; }
+	#topboxenroll:hover {background-color: rgba(0,0,0,.95); padding: 50px 5px; }
 
 	// hands layout
-	#handslayout {position: relative; width: 100%; height: auto; margin: 0; padding: 25px 5%;}
+	#handslayout {position: relative; float: left; width: 100%; min-height: 100%; height: auto; margin: 0; padding: 25px 5% 25px 5%;}
 	.handsbox {position: relative; text-align: center; width: 100%; height: auto; margin: 10px 0; padding: 0;}
-	.handsheader {position: relative; text-align: center; font-size: 30px; color: #fff; font-family: "verveine",sans-serif; text-shadow: 4px 4px #000; font-weight: 700; margin: 10px 0;}
-	.handspara {position: relative; text-align: center; font-size: 18px; line-height: 20px; font-family: 'Century Gothic', Sans-Serif; font-weight: 400; width: 60%; margin: 0 20%; color: #fff;}
-	.regbutton2 {display: none; background-color: #fff; text-align: center; color: #216f90; padding: 5px 10px; margin: 10px auto; width: 70%; font-size: 24px; font-weight: 700;}
-	.handsgallery {float: left; width: 100%; padding: 0; margin: 10px 0 25px 0; height: auto;}
-	.handspic {position: relative; width: 33.3%; float: left; height: auto;}
-	.galleryimage {float: left; width: 100%; height: auto;}
-	.howitworks {position: relative; float: left; width: 100%; height: auto; margin: 15px 0;}
-	.workspic {position: relative; width: 33.3%; float: left; height: auto;}
+	.handsheader {position: relative; text-align: center; font-size: 60px; color: #fff; font-family: "verveine",sans-serif; text-shadow: 4px 4px #000; font-weight: 700; margin: 10px 0;}
+	.regbutton2 {display: none; background-color: #fff; text-align: center; color: #216f90; padding: 5px 10px; margin: 10px auto; width: 50%; font-size: 36px; font-weight: 700;}
+	.handsgallery {position: relative; float: left; width: 100%; padding: 0; margin: 25px 0; height: auto;}
+	.handspic {position: relative; float: left; width: 46%; margin: 0 2%; height: auto;}
+	.galleryimage {position: relative; width: 100%; height: auto; margin: 0px 0;}
+	.howitworks {position: relative; width: 100%; height: auto;}
+	.workspic {position: relative; width: 30%; height: auto; float: left;}
+	.workspic2 {position: relative; width: 70%; height: auto; float: left;}
+	.handspara2 {position: relative; color: #fff; font-size: 18px; line-height: 20px; width: 80%; margin: 10px 10%; font-family: 'Century Gothic', Sans-Serif; font-weight: 400;}
+	.hands3steps {position: relative; color: #000; font-family: "verveine",sans-serif; font-size: 24px; line-height: 24px; text-align: center;}
+	.workspara {font-size: 18px; line-height: 20px; text-align: center; width: 100%; margin: 5%; font-family: 'Century Gothic', Sans-Serif;}
+	.worksbox {position: relative; float: left; width: 100%;}
 
 	// learn layout
-	#learnlayout {position: relative; width: 100%; height: auto; margin: 0; padding: 25px 5%;}
+	#learnlayout {position: relative; float: left;  width: 100%; min-height: 100%; height: auto; margin: 0; padding: 25px 5% 25px 5%;}
 	.learnbox {position: relative; float: left; text-align: left; width: 100%; margin: 0px 0 25px 0; padding: 0; font-family: 'Century Gothic', Sans-Serif; font-weight: 700;}
 	.learnheader {position: relative; text-align: left; width: 100%; font-size: 30px; line-height: 30px; color: #fff;}
 	.smallword2 {font-size: 18px; font-weight: 400;}
 	.bigword2 {font-size: 60px; line-height: 60px;}
 	.learnpara {position: relative; text-align: left; color: #000; margin: 10px 0; font-size: 18px; line-height: 20px; font-weight: 400;}
 	.learnlink {color: #b82771; text-decoration: underline;}
-	.learnquizbox {float: left; height: 240px; width: 300px; margin: 0 0 0 0; padding: 0 0 0 0;}
+	.learnquizbox {position: relative; height: 240px; width: 300px; margin: 25px 0; padding: 0 0 0 0;}
 	.learnquiz {position: relative; height: 240px; width: 240px; margin: 0; background-color: #fff;}
 	#learninfo {position: relative; width: 100%; height: auto; margin: 0; padding: 0;}
 	#answerbox {position: absolute; top: 0; right: -60px; width: 54px; height: 240px; padding: 0; margin: 0;}
 	#truebox {position: relative; width: 60px; height: 117px; text-align: center; font-size: 18px; padding: 51px 0; color: #fff; vertical-align: center; background-color:rgba(33,111,144,1);}
-	#falsebox {position: relative; width: 60px; height: 117px;  margin-top: 6px; text-align: center; font-size: 18px; padding: 51px 0; color: #fff; vertical-align: center; background-color:rgba(184,39,113,1);}
+	#falsebox {position: relative; width: 60px; height: 117px; margin-top: 6px; text-align: center; font-size: 18px; padding: 51px 0; color: #fff; vertical-align: center; background-color:rgba(184,39,113,1);}
 	.learnmorebox {position: absolute; bottom: -24px; width: 100%; height: auto;}
 	.sharebox {position: relative; font-size: 18px; color: #000; font-weight: 400;}
 	.learncountbox {position: absolute; bottom: -24px; right: -60px; color: #e8eae9; font-size: 18px; font-style: italic; font-weight: 400;}
+	.quiztitle {position: relative; font-size: 20px; line-height: 24px; color: #fff; text-align: center; width: 100%;}
+
+	// quote layout
+	#quotelayout {position: relative; float: left;  width: 100%; min-height: 100%; height: auto; margin: 0; padding: 25px 0 25px 0;}
+	.header1 {position: relative; color: #fff; font-weight: 700; font-size: 30px; line-height: 32px; text-align: center; width: 100%; margin: 25px 0 0 0;}
+	.bigword {font-size: 60px;}
+	.header2 {position: relative; color: #fff; font-weight: 700; width: 100%; margin: 30px 0 15px 0; font-size: 24px; line-height: 24px; text-align: center;}
+	.smallword {font-size: 18px;}
+
+	.deadlinebox {position: relative; float: left; clear: both; height: auto; width: 100%; margin: 0 0 50px 0; padding: 0; text-align: center; color: #fff;}
+	.deadlinebox2 {width: 70%; margin: 0 15%; padding: 10px;}
+	.deadline {position: relative; font-size: 24px; line-height: 26px; font-weight: 400;}
+	.deadlinedate {font-weight: 700;}
+	.dateremaining {position: relative; text-align: center; font-size: 20px; line-height: 20px; font-style: italic; width: 100%;}
+	.bottomoptions {position: relative; margin: 25px 0; width: 100%;}
+	#bottomboxenroll {position: relative; float: left; top: 0; left: 0; text-align: center; background-color:rgba(255,255,255,.95); font-size: 20px; line-height: 20px; width: 50%; height: auto; padding: 40px 5px; color: #c01c73; cursor: pointer; transition: all 500ms ease 0s;}
+	#bottomboxcontact {position: relative; top: 0; margin-left: 50%; text-align: center; background-color:rgba(215,121,172,.95); font-size: 20px; line-height: 20px; width: 50%; height: auto; padding: 40px 5px; color: #000; cursor: pointer; transition: all 500ms ease 0s;}
+
+	#bottomboxenroll:hover {background-color: rgba(0,0,0,.95); padding: 50px 5px; color: #fff; }
+	#bottomboxcontact:hover {background-color: rgba(0,0,0,.95); padding: 50px 5px; color: #fff;}
 
 	// footer nav
-	.navfooter {position: fixed; bottom: 0; left: 0; width: 100%; margin: 0; padding: 15px 5%; background-color:rgba(232,234,233,1); color: #000;}
-	.checklist {position: relative; width: 300px; height: 5px; background-color: rgba(0,0,0,1); opacity: 1; overflow: visible; margin: 5px auto;}
-	.checklist .circletop {background-color: rgba(0,0,0, 1); width: 30px; height: 30px; border-radius: 50%; border: 5px solid rgba(232, 234, 233, 1);}
-	.contacttoday {position: absolute; right:0; bottom:0; color: #000; font-size: 18px; font-weight: 700; margin: 5px 25px;}
-	#circlelist1 {position: absolute; top: -17.5px; left: -5px;}
-	#circlelist2 {position: absolute; top: -17.5px; left: 137.5px;}
-	#circlelist3 {position: absolute; top: -17.5px; right: -5px;}
+	.navfooter {position: relative; float: left; height: auto; width: 100%; margin: 0; padding: 5px 1%; background-color:rgba(232,234,233,1); color: #000;}
+	.contacttoday {position: relative; float: left; color: #000; font-size: 12px; font-weight: 700; margin: 5px;}
+	.sitedesign {position: relative; float: right; color: #000; font-size: 12px; font-weight: 400; margin: 5px;}
 
 	// hidden form
 	#hiddenform {position: absolute; opacity: 0; background-color: #fff; z-index: 0; top: 0; left: 0; width: 90%; height: auto; margin: 50px 5%;}
 	#hiddenform.active {position: absolute; opacity: 1; background-color: #fff; z-index: 1000; top: 0; left: 0; width: 90%; height: auto; margin: 50px 5% 0 5%;}
+	
+	// hidden form
+	#wrapperform {opacity: 0; z-index: 0; position: fixed; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(33,111,144,.9); margin: 0;}
+	#wrapperform.active {opacity: 1; z-index: 999; position: fixed; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(33,111,144,.9); margin: 0;}
+	#hiddenform {position: absolute; opacity: 0; background-color: rgba(0,0,0,0); z-index: 0; top: 0; left: 5%; width: 80%; height: auto; margin: 50px auto 0 auto;}
+	#hiddenform.active {position: absolute; opacity: 1; background-color: rgba(0,0,0,0); z-index: 1000; top: 0; left: 5%; width: 80%; height: auto; margin: 50px auto 0 auto;}
 
+	#wrapperform2 {opacity: 0; z-index: 0; position: fixed; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(215,121,172,.9); margin: 0;}
+	#wrapperform2.active {opacity: 1; z-index: 999; position: fixed; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(215,121,172,.9); margin: 0;}
+	#hiddenform2 {position: absolute; opacity: 0; background-color: rgba(0,0,0,0); z-index: 0; top: 0; left: 5%; width: 80%; height: auto; margin: 50px auto 0 auto;}
+	#hiddenform2.active {position: absolute; opacity: 1; background-color: rgba(0,0,0,0); z-index: 1000; top: 0; left: 5%; width: 80%; height: auto; margin: 50px auto 0 auto;}
+
+	#hiddenform2 h1 {text-align: center; font-size: 36px; color: #000;}
+	#hiddenform2 h2 {text-align: center; font-size: 24px; color: #000;}
 
 	// closed button 
 	#sitemenu-icon {display: none;}
@@ -445,6 +506,7 @@
 	// hidden form
 	#hiddenform-launch {position: absolute; opacity: 0; background-color: #fff; z-index: 0; top: 0; left: 0; width: 90%; height: auto; margin: 50px 5%;}
 	#hiddenform-launch.active {position: absolute; opacity: 1; background-color: #fff; z-index: 1000; top: 0; left: 0; width: 90%; height: auto; margin: 50px 5% 0 5%;}
+
 
 	// closed button 
 	#sitemenu-icon-launch {display: none;}
