@@ -1,0 +1,407 @@
+<div id="sitemenu-icon">
+	<span class="line1"></span>
+	<span class="line3"></span>
+</div>
+<div class="navtop">
+	<ul class="navtoplist">
+		<%= link_to '#containerhands' do %>
+		<li id="logoholder">
+			<%= image_tag 'jplogo.jpg', :class => "logoimage" %>
+		</li>
+		<% end %>
+		<%= link_to '#handslayout' do %>
+		<li id="handsbutton" class="jppink-color selectedtab">
+			<span>#HANDSinHEALTH</span>
+			<div class="circletop jppink"></div>
+		</li>
+		<% end %>
+		<%= link_to '#learnlayout' do %>
+		<li id="learnbutton">
+			<span>Learn More</span>
+			<div class="circletop jplightblue"></div>
+		</li>
+		<% end %>
+		<%= link_to '#quotelayout' do %>
+		<li id="quotebutton" class="">
+			<span>Enroll Today</span>
+			<div class="circletop jpblue"></div>
+
+		</li>
+		<% end %>
+	</ul>
+
+</div>
+<div id="wrapperform">
+	<div id="hiddenform" class="">
+
+		<%= render 'contacts/new' %>
+			
+	</div>
+</div>
+
+
+<div id="containerhands">
+
+	<%= link_to '#createimage' do %>
+	<div id="handsinhealth">
+		#HANDSinHEALTH | Put Your Hands In >
+	</div>
+	<% end %>
+	<div id="topcontent">
+		<div class="logofont">
+			#HANDSinHEALTH
+		</div>
+			<div class="handspara">
+					<span>Join JP Health in empowering your family and others in getting the right health insurance.</span>
+			</div>
+			<div class="topoptions">
+				<%= link_to '#learnlayout' do %>
+				<div id="topboxlearn">
+					Learn More 
+				</div>
+				<% end %>
+				<div id="topboxenroll">
+					Enroll Now 
+				</div>				
+
+		</div>
+
+
+	</div>
+
+	<div id="intro">
+			<div class="slide active current" id="banner1"></div>
+	</div>
+
+	<div id="main">
+
+		<div id="handslayout" class="jppink">
+			<div class="handsbox">
+
+				<div class="handspara2">
+					It's all about allowing you to compare health insurance plans side-by-side and HELPING YOU choose the one that fits your needs and your budget. If this is what you are looking for, CONTACT US - it is what we do.
+				</div>
+
+				<div id="createimage" class="handsheader">
+					<div class="logofont">#HANDSinHEALTH</div>
+					</div>
+
+				<div class="hands3steps">
+					Create & Share Your</br> #HANDSinHEALTH Pic</br> in 3 Easy Steps.
+
+				</div>
+
+
+				<div class="howitworks">
+
+					<div class="worksbox">
+					<div class="workspic">
+						<%= image_tag 'hand-illustration.png', :class => "galleryimage" %>
+					</div>
+					<div class="workspic">
+						<div class="workspara">
+						1. Gather your love ones and put your hands in for health.
+					</div>
+
+					</div>
+				</div>
+				<div class="worksbox">
+					<div class="workspic">
+						<%= image_tag 'camera-illustration.png', :class => "galleryimage" %>
+					</div>
+					<div class="workspic">
+						<div class="workspara">
+						2.Take a cool pic and make it your own.
+					</div>
+					</div>
+				</div>
+				<div class="worksbox">
+					<div class="workspic">
+						<%= image_tag 'profile-illustration.png', :class => "galleryimage" %>
+					</div>
+					<div class="workspic">
+						<div class="workspara">
+						3. Upload your pic and share using #HANDSinHEALTH
+					</div>
+				</div>
+			</div>
+
+				</div>
+
+				<div id="picbutton" class="regbutton2">
+					Submit Your Pic
+				</div>
+			</div>
+
+			<div class="handsgallery">
+
+				<div class="handspic">
+					<%= image_tag 'hands1.jpg', :class => "galleryimage" %>
+				</div>
+
+				<div class="handspic">
+					<%= image_tag 'hands2.jpg', :class => "galleryimage" %>
+				</div>
+				<div class="handspic">
+					<%= image_tag 'hands3.jpg', :class => "galleryimage" %>
+				</div>			
+				<div class="handspic">
+					<%= image_tag 'hands4.jpg', :class => "galleryimage" %>
+				</div>
+													
+			</div>
+			
+
+		</div>
+
+		<div id="learnlayout"  class="jplightblue">
+			<div class="learnbox">
+				<div class="learnheader">
+					<span class="bigword2">Over 9 Million </span></br>
+					More Americans Gain</br>
+					Health Insurance in 2014 <span class="smallword2">(compared to 2013)</span>
+
+				</div>
+				<div class="learnpara">
+					Since Obamacare, getting health insurance is easier and more affordable.  Learn more and share with others. <%= link_to "Make sure you got the right coverage at an affordable price", "#", class: "learnlink" %>
+
+				</div>
+
+			<div class="learnquizbox">
+					<div class="quiztitle">
+						Health Insurance Quiz
+					</div>
+				<div class="learnquiz">
+			
+					<div id="learninfo">
+						
+
+
+					</div>
+					<div id="answerbox">
+						<div id="truebox">
+							TRUE
+						</div>
+						<div id="falsebox">
+							FALSE
+						</div>
+
+					</div>
+
+					<div class="learnmorebox">
+						<div class="sharebox">
+							Share
+						</div>
+
+
+					</div>
+
+						<div class="learncountbox">
+						1/10
+
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<div id="quotelayout" class="jpblue">
+			<div id="handsinhealth2">
+		#HANDSinHEALTH | Put Your Hands In >
+		</div>
+
+			<div class="header1">
+				Ready to protect your</br>
+				family and yourself?
+			</div>
+
+			<div class="header2">
+				Apply or Renew</br>
+				<span class="smallword">your health coverage today.</span>
+
+			</div>
+
+			<div class="clear"></div>
+
+			<div class="bottomoptions">
+				<div id="bottomboxenroll">
+					Enroll Now 
+				</div>
+				<div id="bottomboxcontact">
+					Contact Today
+				</div>				
+
+		</div>
+
+			<div class="deadlinebox">
+			<div class="deadlinebox2">
+				<div class="deadline">
+					Registration deadline is
+					<span class="deadlinedate">Jan 31, 2016</span>
+				</div>
+					
+					<div class="dateremaining">
+					<div id="clock"></div>
+				</div>
+
+				</div>
+			</div>
+
+	</div>
+</div>
+
+	<div class="navfooter">
+
+		<div class="contacttoday">
+			Contact Today
+
+		</div>
+
+	</div>
+
+
+<script type="text/javascript">
+	$('#clock').countdown('2016/1/31').on('update.countdown', function(event) {
+   var $this = $(this).html(event.strftime(''
+     + '<span>%-w</span> week%!w '
+     + '<span>%-d</span> day%!d '
+     + '<span>%H</span> hr '
+     + '<span>%M</span> min '
+     + '<span>%S</span> sec'));
+ });
+</script>
+
+<script>
+// Get an array of statements (images)
+var arrayImage = ["jpfinancialquiz1.jpg", "jpfinancialquiz2.jpg", "jpfinancialquiz3.jpg", "jpfinancialquiz4.jpg", "jpfinancialquiz5.jpg", "jpfinancialquiz6.jpg", "jpfinancialquiz7.jpg", "jpfinancialquiz8.jpg", "jpfinancialquiz9.jpg", "jpfinancialquiz10.jpg"];
+console.log(arrayImage[0]);
+//create quiz loop
+
+//place image in array to html box
+//var image = arrayImage[0];
+
+//console.log(image2);
+
+//$('#learninfo').prepend()
+//User clicks on answer
+
+//Button interactions
+//Check if answer is right or wrong
+//If right, congrats and explain
+//If wrong, sorry and explain why
+//keep current score of quiz
+//Create a next button
+//Next button goes to next question in group
+//Last question gives final score and ask user to sign up
+
+// backstretch jquery
+	$("#banner1").backstretch([ "/assets/handstogether5.jpg",
+      "/assets/handstogether1.jpg"
+    , "/assets/handstogether2.jpg"
+    , "/assets/handstogether3.jpg" ,
+    "/assets/handstogether4.jpg"
+  ], {duration: 3000, fade: 750});
+
+	 $("#quotelayout").backstretch("/assets/jpfamily.jpg");
+
+
+	$("#topboxenroll").click(function(){
+		$("#hiddenform").addClass("active");
+		$("#wrapperform").addClass("active");
+		$("#sitemenu-icon").addClass("active");
+		$("#sitemenu-icon").addClass("open");
+	});
+	$("#bottomboxenroll").click(function(){
+		$("#hiddenform").addClass("active");
+		$("#wrapperform").addClass("active");
+		$("#sitemenu-icon").addClass("active");
+		$("#sitemenu-icon").addClass("open");
+	});
+	$("#qqbutton").click(function(){
+		$("#hiddenform").addClass("active");
+		$("#wrapperform").addClass("active");
+		$("#sitemenu-icon").addClass("active");
+		$("#sitemenu-icon").addClass("open");
+	});
+	$("#sitemenu-icon").click(function(){
+		$("#hiddenform").removeClass("active");
+		$("#wrapperform").removeClass("active");
+		$("#sitemenu-icon").removeClass("open");
+		$("#sitemenu-icon").removeClass("active");
+	});
+
+	$("#saveForm").click(function(){
+		$("#hiddenform").removeClass("active");
+	});
+
+	$("#quotebutton").click(function(){
+		$('#quotebutton').addClass("selectedtab");
+		$('#handsbutton').removeClass("selectedtab");
+		$('#learnbutton').removeClass("selectedtab");
+		$('#quotebutton').addClass("jpblue-color");
+		$('#handsbutton').removeClass("jppink-color");
+		$('#learnbutton').removeClass("jplightblue-color");
+	});
+	$("#handsbutton").click(function(){
+		$('#quotebutton').removeClass("selectedtab");
+		$('#handsbutton').addClass("selectedtab");
+		$('#learnbutton').removeClass("selectedtab");
+		$('#quotebutton').removeClass("jpblue-color");
+		$('#handsbutton').addClass("jppink-color");
+		$('#learnbutton').removeClass("jplightblue-color");
+	});
+	$("#learnbutton").click(function(){
+		$('#quotebutton').removeClass("selectedtab");
+		$('#handsbutton').removeClass("selectedtab");
+		$('#learnbutton').addClass("selectedtab");
+		$('#quotebutton').removeClass("jpblue-color");
+		$('#handsbutton').removeClass("jppink-color");
+		$('#learnbutton').addClass("jplightblue-color");
+	});
+
+</script>
+
+<script>
+	$(document).ready(function() {
+	    $('ul.navtoplist').on('click', 'a', function(e) {       
+	        e.preventDefault();
+	        $('html, body').animate({
+	            scrollTop: $( $.attr(this, 'href') ).offset().top
+	        }, 500);
+	    });
+	});
+	// get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
+	var handsbottom = $('#handslayout').offset().top + $('#handslayout').height();
+	var learnbottom = $('#learnlayout').offset().top + $('#learnlayout').height();
+
+	// on scroll, 
+	$(window).on('scroll',function(){
+
+	    // we round here to reduce a little workload
+	    var stop = Math.round($(window).scrollTop());
+		
+		if (stop > learnbottom) {
+	    $('#quotebutton').addClass("selectedtab");
+		$('#handsbutton').removeClass("selectedtab");
+		$('#learnbutton').removeClass("selectedtab");
+		$('#quotebutton').addClass("jpblue-color");
+		$('#handsbutton').removeClass("jppink-color");
+		$('#learnbutton').removeClass("jplightblue-color");
+	    } else if (stop > handsbottom) {
+	    $('#quotebutton').removeClass("selectedtab");
+		$('#handsbutton').removeClass("selectedtab");
+		$('#learnbutton').addClass("selectedtab");
+		$('#quotebutton').removeClass("jpblue-color");
+		$('#handsbutton').removeClass("jppink-color");
+		$('#learnbutton').addClass("jplightblue-color");
+	    } else {
+	    $('#quotebutton').removeClass("selectedtab");
+		$('#handsbutton').addClass("selectedtab");
+		$('#learnbutton').removeClass("selectedtab");
+		$('#quotebutton').removeClass("jpblue-color");
+		$('#handsbutton').addClass("jppink-color");
+		$('#learnbutton').removeClass("jplightblue-color");
+
+	    }
+
+	});
+</script>

@@ -2,24 +2,33 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
 // navtop
 
-.navtop {position: absolute; top: 0; left: 0; z-index: 100; width: 100%; padding: 10px 0 0 0; margin: 0; background-color: #fff;}
+.navtop {position: fixed; top: 0; left: 0; z-index: 100; width: 100%; padding: 10px 0 0 0; margin: 0; background-color: #fff;}
 .navtop ul {position: relative; height: auto; width: 100%; max-width: 800px; list-style-type: none; margin: 0; padding: 0;}
 .navtop ul li {position: relative; float: left; text-align: center; width: 25%; height: auto; padding: 0; margin: 0; background-color: #fff; cursor: pointer;}
 .navtop ul li span {position: relative; color: #e8eae9; width: 100%; text-align: center; font-size: 18px; line-height: 24px; padding: 10px auto; margin: 10px 0; }
 .circletop {position: relative; width: 25px; height: 25px; border-radius: 50%; margin:5px auto 10px auto; padding: 0;}
 .logoimage {float: left; width: 100%; margin-top: -10px;}
-#logoholder {background-color:rgba(232,234,233,0); cursor: default; padding-bottom: 10px;}
+#logoholder {background-color:rgba(232,234,233,0); cursor: pointer; padding-bottom: 10px;}
 .clear {position: relative; width: 100%; float: left; clear: both;}
 
-.jpblue {background-color:rgba(33,111,144,1);}
-.jppink {background-color:rgba(184,39,113,1);}
-.jplightblue {background-color:rgba(162,200,222,1);}
+.jpblue {background-color:rgba(0,113,152,1);}
+.jppink {background-color:rgba(192,28,115,1);}
+.jplightblue {background-color:rgba(88,159,185,1);}
+.jplightpink {background-color:rgba(215,121,172,1);}
 
-.jpblue-color {color: #216f90;}
-.jppink-color {color: #b82771;}
-.jplightblue-color {color: #a2c8de;}
+.jpblue-color {color: #007198;}
+.jppink-color {color: #c01c73;}
+.jplightblue-color {color: #589fb9;}
+.jplightpink-color {color: #d779ac;}
+
+#handsbutton:hover span {color: #c01c73; font-weight: 700;}
+#learnbutton:hover span {color: #589fb9; font-weight: 700;}
+#quotebutton:hover span {color: #007198; font-weight: 700;}
+
+
 
 .body {font-family: 'Century Gothic', Sans-Serif; font-weight: 700;}
 
@@ -33,40 +42,46 @@
 #learnbutton.selectedtab {padding-bottom: 30px; margin-bottom: -30px; transition: all 1s ease 0s;}
 
 // main layout
-#mainlayout {position: fixed; width: 100%; height: 100%; padding: 0; transition: all 1s ease 0s;}
+#mainlayout {position: fixed; width: 100%; height: 100%; padding: 0; background-color:rgba(0,0,0,1); transition: all 1s ease 0s;}
 #mainlayout2 {position: absolute; width: 100%; height: auto; padding: 50px 0 0 0;}
+#containerhands {z-index: 10; position: absolute; color: #fff; background-color:rgba(192,28,115,1); width: 100%; height: 100%; margin: 0 auto; transition: all 400ms linear 0s;}
+#handsinhealth {font-family: "verveine",sans-serif; background-color: rgba(0,0,0,.75); bottom: 0; cursor: pointer; left: 0; padding: 10px 0 5px; position: absolute; text-align: center; transition: background-color 200ms linear 0s; width: 100%; z-index:100; font-size: 40px; color: #fff;}
+#handsinhealth2 {font-family: "verveine",sans-serif; background-color: rgba(0,0,0,.75); bottom: 0; cursor: pointer; left: 0; padding: 10px 0 5px; position: absolute; text-align: center; transition: background-color 200ms linear 0s; width: 100%; z-index:100; font-size: 40px; color: #fff;}
 
-// quote layout
-#quotelayout {position: relative; width: 100%; height: auto; margin: 0; padding: 25px 5%;}
-.header1 {position: relative; float: left; color: #fff; font-size: 60px; line-height: 62px; text-align: left; width: auto; min-width: 45%; margin: 75px 5% 0 0;}
-.bigword {font-size: 128px;}
-.header2 {position: relative; float: left; color: #fff; width: auto; min-width: 0%; margin: 50px 0 25px 0; font-size: 60px; line-height: 50px; text-align: left;}
-.smallword {font-size: 36px;}
-.regbutton {background-color: #fff; cursor: pointer; text-align: center; color: #b82771; padding: 5px 10px; margin: 10px auto 10px 0; width: 70%; font-size: 36px;}
+#intro {height: 100%;}
+#intro .slide {background-attachment: fixed; background-position: center 0; background-repeat: no-repeat; background-size: cover; height: 0; overflow: hidden; position: absolute; transition: height 900ms cubic-bezier(.63, .64, .3, 1) 0s; width: 100%;}
+#intro .slide.active {height: 100%;}
+#main {height: 100%;}
+#topcontent {left: 0; margin: 0; width: 100%; position: absolute; text-align: center; top: 15%; z-index: 500;}
+.logofont {font-size: 120px; color: #fff; font-family: "verveine",sans-serif; text-shadow: 4px 4px #000;}
+.handspara {position: relative; text-shadow: 2px 2px #000; text-align: center; font-size: 30px; line-height: 32px; font-family: 'Century Gothic', Sans-Serif; font-weight: 700; width: 60%; margin: 0 20%; color: #fff;}
+.topoptions {position: relative; margin: 50px 0; width: 100%;}
+#topboxlearn {position: relative; float: left; top: 0; left: 0; text-align: center; background-color:rgba(88,159,185,.95); font-size: 30px; line-height: 24px; width: 50%; height: auto; padding: 50px 5px; color: #fff; cursor: pointer; transition: all 500ms ease 0s;}
+#topboxenroll {position: relative; top: 0; margin-left: 50%; text-align: center; background-color:rgba(0,113,152,.95); font-size: 30px; line-height: 24px; width: 50%; height: auto; padding: 50px 5px; color: #fff; cursor: pointer; transition: all 500ms ease 0s;}
 
-.deadlinebox {position: relative; float: right; clear: both; height: auto; width: 100%; margin: 25px 0; padding: 0; text-align: right; color: #e8eae9;}
-.deadlinebox2 {float: right; min-width: 50%; padding: 0 40% 0 0;}
-.deadline {position: relative;  float: right; font-size: 36px; line-height: 38px; font-weight: 400;}
-.deadlinedate {font-weight: 700;}
-.dividerline {float: right; height: 3px; width: 30%; margin: 25px auto 25px 25%; clear: both; background-color:rgba(232,234,233,1);}
-.dateremaining {position: relative; float: right; font-size: 30px; font-style: italic; text-align: right;}
-#notready {position: relative; float: right; background-color: #fff; cursor: pointer; text-align: center; color: #216f90; padding: 5px 10px; margin: 10px auto 10px 0; width: 70%; font-size: 36px;}
+#topboxlearn:hover {background-color: rgba(0,0,0,.95); padding: 60px 5px; }
+#topboxenroll:hover {background-color: rgba(0,0,0,.95); padding: 60px 5px; }
+.handspara:hover span {background-color:rgba(192,28,115,.75);}
+#handsinhealth2:hover {color: #c01c73;}
+#handsinhealth:hover {color: #c01c73;}
 
 // hands layout
-#handslayout {position: relative; width: 100%; height: auto; margin: 0; padding: 25px 5%;}
+#handslayout {position: relative; float: left; width: 100%; min-height: 100%; height: auto; margin: 0; padding: 75px 5% 25px 5%;}
 .handsbox {position: relative; text-align: center; width: 100%; height: auto; margin: 50px 0; padding: 0;}
-.handsheader {position: relative; text-align: center; font-size: 60px; color: #fff; font-family: "ff-enzo-web",sans-serif; text-shadow: 4px 4px #000; font-weight: 700; margin: 10px 0;}
-.handspara {position: relative; text-align: center; font-size: 30px; line-height: 32px; font-family: 'Century Gothic', Sans-Serif; font-weight: 400; width: 60%; margin: 0 20%; color: #fff;}
+.handsheader {position: relative; text-align: center; font-size: 60px; color: #fff; font-family: "verveine",sans-serif; text-shadow: 4px 4px #000; font-weight: 700; margin: 10px 0;}
 .regbutton2 {display: none; background-color: #fff; text-align: center; color: #216f90; padding: 5px 10px; margin: 10px auto; width: 50%; font-size: 36px; font-weight: 700;}
-.handsgallery {float: left; width: 100%; padding: 0; margin: 10px 0 50px 0; height: auto;}
-.handspic {position: relative; width: 20%; float: left; height: auto;}
-.galleryimage {float: left; width: 100%; height: auto;}
-.howitworks {position: relative; float: left; width: 100%; height: auto; margin: 25px 0;}
-.workspic {position: relative; width: 33.3%; float: left; height: auto;}
-
+.handsgallery {position: relative; float: left; width: 100%; padding: 0; margin: 25px 0; height: auto;}
+.handspic {position: relative; float: left; width: 23%; margin: 0 1%; height: auto;}
+.galleryimage {position: relative; width: 100%; height: auto; margin: 25px 0;}
+.howitworks {position: relative; width: 100%; height: auto;}
+.workspic {position: relative; width: 100%; height: auto; float: left;}
+.handspara2 {position: relative; color: #fff; font-size: 36px; line-height: 38px; width: 80%; margin: 10px 10%; font-family: 'Century Gothic', Sans-Serif; font-weight: 400;}
+.hands3steps {position: relative; color: #000; font-family: "verveine",sans-serif; font-size: 48px; line-height: 48px; text-align: center;}
+.workspara {font-size: 48px; line-height: 48px; text-align: center; width: 100%; font-family: 'Century Gothic', Sans-Serif;}
+.worksbox {position: relative; float: left; width: 33.33%;}
 
 // learn layout
-#learnlayout {position: relative; width: 100%; height: auto; margin: 0; padding: 25px 5%;}
+#learnlayout {position: relative; float: left;  width: 100%; min-height: 100%; height: auto; margin: 0; padding: 75px 5% 25px 5%;}
 .learnbox {position: relative; float: left; text-align: left; width: 80%; margin: 50px 10%; padding: 0; font-family: 'Century Gothic', Sans-Serif; font-weight: 700;}
 .learnheader {position: relative; text-align: left; width: 100%; font-size: 40px; line-height: 40px; color: #fff;}
 .smallword2 {font-size: 24px; font-weight: 400;}
@@ -82,9 +97,34 @@
 .learnmorebox {position: absolute; bottom: -30px; width: 100%; height: auto;}
 .sharebox {position: relative; font-size: 24px; color: #000; font-weight: 400;}
 .learncountbox {position: absolute; bottom: -30px; right: -100px; color: #e8eae9; font-size: 24px; font-style: italic; font-weight: 400;}
+.quiztitle {position: relative; font-size: 40px; color: #fff; text-align: center; width: 100%;}
+
+// quote layout
+#quotelayout {position: relative; float: left;  width: 100%; min-height: 100%; height: auto; margin: 0; padding: 75px 0 25px 0;}
+.header1 {position: relative; color: #fff; font-weight: 700; font-size: 100px; line-height: 100px; text-align: center; width: 100%; margin: 50px 0 0 0;}
+.bigword {font-size: 128px;}
+.header2 {position: relative; color: #fff; font-weight: 700; width: 100%; margin: 50px 0 0px 0; font-size: 60px; line-height: 50px; text-align: center;}
+.smallword {font-size: 36px;}
+.regbutton {background-color: #fff; cursor: pointer; text-align: center; color: #b82771; text-shadow: 0px; padding: 132px 0; margin: 0; width: 300px; height: 300px; border-radius: 50%; font-size: 36px;}
+
+.deadlinebox {position: relative; float: left; clear: both; height: auto; width: 100%; margin: 0 0 50px 0; padding: 0; text-align: center; color: #fff;}
+.deadlinebox2 {width: 70%; margin: 0 15%; padding: 10px;}
+.deadline {position: relative; font-size: 36px; line-height: 38px; font-weight: 400;}
+.deadlinedate {font-weight: 700;}
+.dividerline {height: 3px; width: 50%; margin: 25px 25%; clear: both; background-color:rgba(0,0,0,1);}
+.dateremaining {position: relative; text-align: center; font-size: 30px; font-style: italic; width: 100%;}
+#notready {position: relative; background-color: #fff; cursor: pointer; text-align: center; color: #216f90; padding: 5px 10px; margin: 10px auto 10px 0; width: 70%; font-size: 36px;}
+.bottomoptions {position: relative; margin: 25px 0; width: 100%;}
+#bottomboxenroll {position: relative; float: left; top: 0; left: 0; text-align: center; background-color:rgba(255,255,255,.95); font-size: 30px; line-height: 24px; width: 50%; height: auto; padding: 50px 5px; color: #c01c73; cursor: pointer; transition: all 500ms ease 0s;}
+#bottomboxcontact {position: relative; top: 0; margin-left: 50%; text-align: center; background-color:rgba(215,121,172,.95); font-size: 30px; line-height: 24px; width: 50%; height: auto; padding: 50px 5px; color: #000; cursor: pointer; transition: all 500ms ease 0s;}
+
+
+#bottomboxenroll:hover {background-color: rgba(0,0,0,.95); padding: 60px 5px; color: #fff; }
+#bottomboxcontact:hover {background-color: rgba(0,0,0,.95); padding: 60px 5px; color: #fff;}
+
 
 // footer nav
-.navfooter {position: fixed; bottom: 0; left: 0; height: auto; width: 100%; margin: 0; padding: 15px 5%; background-color:rgba(232,234,233,1); color: #000;}
+.navfooter {display: none; position: fixed; bottom: 0; left: 0; height: auto; width: 100%; margin: 0; padding: 15px 5%; background-color:rgba(232,234,233,1); color: #000;}
 .checklist {position: relative; width: 300px; height: 5px; background-color: rgba(0,0,0,1); opacity: 1; overflow: visible; margin: 5px auto;}
 .checklist .circletop {background-color: rgba(0,0,0, 1); width: 30px; height: 30px; border-radius: 50%; border: 5px solid rgba(232, 234, 233, 1);}
 .contacttoday {position: relative; float: left; color: #000; font-size: 18px; font-weight: 700; margin: 5px 25px;}
@@ -98,22 +138,6 @@
 #hiddenform {position: absolute; opacity: 0; background-color: #fff; z-index: 0; top: 0; left: 0; width: 80%; height: auto; margin: 50px 10%;}
 #hiddenform.active {position: absolute; opacity: 1; background-color: #fff; z-index: 1000; top: 0; left: 0; width: 80%; height: auto; margin: 100px 10% 0 10%;}
 
-html.embed.firefox body#public.noI div#container.ltr form#form1.wufoo.topLabel.page1 {font-family: 'Century Gothic', Sans-Serif; font-weight: 700;}
-html.embed.firefox body#public.noI div#container.ltr form#form1.wufoo.topLabel.page1 ul li.buttons div a {display: none !important;}
-
-html.embed.firefox body#public.noI div#container.ltr form#form1.wufoo.topLabel.page1 ul li#fo1li1.notranslate span input#Field1.field.text.fn {
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    border-bottom: 2px solid #000 !important;
-    border-style: solid;
-    border-width: 0 0 2px;
-}
-
-input.text, input.search, textarea.textarea {
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    border-bottom: 2px solid #000 !important;
-    border-style: solid;
-    border-width: 0 0 2px;
-}
 
 // closed button 
 #sitemenu-icon {display: none;}
@@ -197,7 +221,7 @@ input.text, input.search, textarea.textarea {
 	// hands layout
 	#handslayout {position: relative; width: 100%; height: auto; margin: 0; padding: 25px 5%;}
 	.handsbox {position: relative; text-align: center; width: 100%; height: auto; margin: 10px 0; padding: 0;}
-	.handsheader {position: relative; text-align: center; font-size: 30px; color: #fff; font-family: "ff-enzo-web",sans-serif; text-shadow: 4px 4px #000; font-weight: 700; margin: 10px 0;}
+	.handsheader {position: relative; text-align: center; font-size: 30px; color: #fff; font-family: "verveine",sans-serif; text-shadow: 4px 4px #000; font-weight: 700; margin: 10px 0;}
 	.handspara {position: relative; text-align: center; font-size: 18px; line-height: 20px; font-family: 'Century Gothic', Sans-Serif; font-weight: 400; width: 60%; margin: 0 20%; color: #fff;}
 	.regbutton2 {display: none; background-color: #fff; text-align: center; color: #216f90; padding: 5px 10px; margin: 10px auto; width: 70%; font-size: 24px; font-weight: 700;}
 	.handsgallery {float: left; width: 100%; padding: 0; margin: 10px 0 25px 0; height: auto;}
@@ -237,19 +261,6 @@ input.text, input.search, textarea.textarea {
 	#hiddenform {position: absolute; opacity: 0; background-color: #fff; z-index: 0; top: 0; left: 0; width: 90%; height: auto; margin: 50px 5%;}
 	#hiddenform.active {position: absolute; opacity: 1; background-color: #fff; z-index: 1000; top: 0; left: 0; width: 90%; height: auto; margin: 50px 5% 0 5%;}
 
-	html.embed.firefox body#public.noI div#container.ltr form#form1.wufoo.topLabel.page1 ul li#fo1li1.notranslate span input#Field1.field.text.fn {
-	    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-	    border-bottom: 2px solid #000 !important;
-	    border-style: solid;
-	    border-width: 0 0 2px;
-	}
-
-	input.text, input.search, textarea.textarea {
-	    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-	    border-bottom: 2px solid #000 !important;
-	    border-style: solid;
-	    border-width: 0 0 2px;
-	}
 
 	// closed button 
 	#sitemenu-icon {display: none;}
@@ -289,6 +300,190 @@ input.text, input.search, textarea.textarea {
 	    opacity: 0;
 	}
 	#sitemenu-icon.open .line3 {
+	    top: 12px;
+	    transform: rotate(45deg);
+	}
+
+
+
+}
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////
+
+// navtop
+
+.navtop-launch {position: absolute; top: 0; left: 0; z-index: 100; width: 100%; padding: 10px 0 0 0; margin: 0; background-color: #fff;}
+.navtop-launch ul {position: relative; height: auto; width: 100%; max-width: 800px; list-style-type: none; margin: 0; padding: 0;}
+.navtop-launch ul li {position: relative; float: left; text-align: center; width: 25%; height: auto; padding: 0; margin: 0; background-color: #fff; cursor: pointer;}
+.navtop-launch ul li span {position: relative; color: #e8eae9; width: 100%; text-align: center; font-size: 18px; line-height: 24px; padding: 10px auto; margin: 10px 0; }
+.circletop-launch {position: relative; width: 25px; height: 25px; border-radius: 50%; margin:5px auto 10px auto; padding: 0;}
+.logoimage-launch {float: left; width: 100%; margin-top: -10px;}
+#logoholder-launch {background-color:rgba(232,234,233,0); cursor: default; padding-bottom: 10px;}
+
+// javascript
+
+#quotebutton-launch.jpblue-color span {color: #216f90; font-weight: 700;}
+
+#quotebutton-launch.selectedtab {padding-bottom: 30px; margin-bottom: -30px; transition: all 1s ease 0s;}
+
+// main layout
+#mainlayout-launch {position: fixed; width: 100%; height: 100%; padding: 0; background-color:rgba(0,0,0,1); transition: all 1s ease 0s;}
+#mainlayout2-launch {position: absolute; width: 100%; height: auto; padding: 50px 0 0 0;}
+
+// quote layout
+#quotelayout-launch {position: relative; width: 100%; height: auto; margin: 0; padding: 25px 5%;}
+.header1-launch {position: relative; float: left; color: #fff; font-size: 60px; line-height: 62px; text-align: left; width: auto; min-width: 45%; margin: 75px 5% 0 0;}
+.bigword-launch {font-size: 128px;}
+.header2-launch {position: relative; float: left; color: #fff; width: auto; min-width: 0%; margin: 50px 0 25px 0; font-size: 60px; line-height: 50px; text-align: left;}
+.smallword-launch {font-size: 36px;}
+.regbutton-launch {background-color: #fff; cursor: pointer; text-align: center; color: #b82771; padding: 5px 10px; margin: 10px auto 10px 0; width: 70%; font-size: 36px;}
+
+.deadlinebox-launch {position: relative; float: right; clear: both; height: auto; width: 100%; margin: 25px 0; padding: 0; text-align: right; color: #e8eae9;}
+.deadlinebox2-launch {float: right; min-width: 50%; padding: 0 40% 0 0;}
+.deadline-launch {position: relative;  float: right; font-size: 36px; line-height: 38px; font-weight: 400;}
+.deadlinedate-launch {font-weight: 700;}
+.dividerline-launch {float: right; height: 3px; width: 30%; margin: 25px auto 25px 25%; clear: both; background-color:rgba(232,234,233,1);}
+.dateremaining-launch {position: relative; float: right; font-size: 30px; font-style: italic; text-align: right;}
+
+// footer nav
+.navfooter-launch {position: fixed; bottom: 0; left: 0; height: auto; width: 100%; margin: 0; padding: 15px 5%; background-color:rgba(232,234,233,1); color: #000;}
+.contacttoday-launch {position: relative; float: left; color: #000; font-size: 18px; font-weight: 700; margin: 5px 25px;}
+
+// hidden form
+#wrapperform-launch {opacity: 0; z-index: 0; position: fixed; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(33,111,144,.9); margin: 0;}
+#wrapperform-launch.active {opacity: 1; z-index: 999; position: fixed; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(33,111,144,.9); margin: 0;}
+#hiddenform-launch {position: absolute; opacity: 0; background-color: #fff; z-index: 0; top: 0; left: 0; width: 80%; height: auto; margin: 50px 10%;}
+#hiddenform-launch.active {position: absolute; opacity: 1; background-color: #fff; z-index: 1000; top: 0; left: 0; width: 80%; height: auto; margin: 100px 10% 0 10%;}
+
+// closed button 
+#sitemenu-icon-launch {display: none;}
+#sitemenu-icon-launch.active {
+	background-color: transparent;
+    cursor: pointer;
+    display: inline-block;
+    height: 24px;
+    position: fixed;
+    right: 40px;
+    top: 40px;
+    width: 32px;
+    z-index: 10000;
+}
+
+#sitemenu-icon-launch span {
+    background: #eaeaea none repeat scroll 0 0;
+    height: 4px;
+    position: absolute;
+    transition: all 300ms cubic-bezier(0.63, 0.64, 0.3, 1) 0s;
+    width: 32px;
+}
+#sitemenu-icon-launch span.line1 {
+    top: 0;
+}
+#sitemenu-icon-launch span.line2 {
+    top: 10px;
+}
+#sitemenu-icon-launch span.line3 {
+    top: 20px;
+}
+#sitemenu-icon-launch.open .line1 {
+    top: 12px;
+    transform: rotate(-45deg);
+}
+#sitemenu-icon-launch.open .line2 {
+    opacity: 0;
+}
+#sitemenu-icon-launch.open .line3 {
+    top: 12px;
+    transform: rotate(45deg);
+}
+
+
+// mobile css
+@media screen and (max-width: 640px){
+	// navtop
+
+	.navtop-launch {position: absolute; top: 0; left: 0; z-index: 100; width: 100%; padding: 0px 0 0 0; margin: 0; background-color: #fff;}
+	.navtop-launch ul {position: relative; height: auto; width: 100%; max-width: 800px; list-style-type: none; margin: 0; padding: 0;}
+	.navtop-launch ul li {position: relative; float: left; text-align: center; width: 25%; height: auto; padding: 0; margin: 0; background-color: #fff; cursor: pointer;}
+	.navtop-launch ul li span {position: relative; color: #e8eae9; width: 100%; text-align: center; font-size: 10px; line-height: 10px; padding: 5px auto; margin: 5px 0; }
+	.circletop-launch {position: relative; width: 15px; height: 15px; border-radius: 50%; margin:0px auto 5px auto; padding: 0;}
+	.logoimage-launch {float: left; width: 100%; margin-top: 0px;}
+	#logoholder-launch {background-color:rgba(232,234,233,1); cursor: default; padding-bottom: 0px;}
+
+	// javascript
+	#quotebutton-launch.selectedtab {padding-bottom: 10px; margin-bottom: -10px; transition: all 1s ease 0s;}
+
+	// main layout
+	#mainlayout2-launch {position: absolute; width: 100%; height: auto; padding: 50px 0 0 0;}
+
+	// quote layout
+	#quotelayout-launch {position: relative; width: 100%; height: auto; margin: 0; padding: 25px 5%;}
+	.header1-launch {position: relative; float: left; font-weight: 700; color: #fff; font-size: 30px; line-height: 32px; text-align: left; width: auto; min-width: 45%; margin: 25px 0% 0 0;}
+	.bigword-launch {font-size: 60px;}
+	.header2-launch {position: relative; float: left; color: #fff; width: auto; min-width: 0%; margin: 30px 0 15px 0; font-size: 30px; line-height: 30px; text-align: left;}
+	.smallword-launch {font-size: 24px;}
+	.regbutton-launch {background-color: #fff; cursor: pointer; text-align: center; color: #b82771; padding: 5px 10px; margin: 10px auto 10px 0; width: 70%; font-size: 24px;}
+
+	.deadlinebox-launch {position: relative; float: right; clear: both; width: auto; height: auto; margin: 25px 0; padding: 0; text-align: right; color: #e8eae9;}
+	.deadlinebox2-launch {float: right; min-width: 50%; padding: 0 0 0 0;}
+	.deadline-launch {position: relative;  float: right; font-size: 24px; line-height: 26px; font-weight: 400;}
+	.deadlinedate-launch {font-weight: 700;}
+	.dividerline-launch {float: right; height: 3px; width: 30%; margin: 15px auto 15px 25%; clear: both; background-color:rgba(232,234,233,1);}
+	.dateremaining-launch {position: relative; float: right; font-size: 20px; font-style: italic; text-align: right;}
+
+
+	// footer nav
+	.navfooter-launch {position: fixed; bottom: 0; left: 0; width: 100%; margin: 0; padding: 15px 5%; background-color:rgba(232,234,233,1); color: #000;}
+	.contacttoday-launch {position: absolute; right:0; bottom:0; color: #000; font-size: 18px; font-weight: 700; margin: 5px 25px;}
+
+	// hidden form
+	#hiddenform-launch {position: absolute; opacity: 0; background-color: #fff; z-index: 0; top: 0; left: 0; width: 90%; height: auto; margin: 50px 5%;}
+	#hiddenform-launch.active {position: absolute; opacity: 1; background-color: #fff; z-index: 1000; top: 0; left: 0; width: 90%; height: auto; margin: 50px 5% 0 5%;}
+
+	// closed button 
+	#sitemenu-icon-launch {display: none;}
+	#sitemenu-icon-launch.active {
+		background-color: transparent;
+	    cursor: pointer;
+	    display: inline-block;
+	    height: 24px;
+	    position: fixed;
+	    right: 40px;
+	    top: 40px;
+	    width: 32px;
+	    z-index: 10000;
+	}
+
+	#sitemenu-icon-launch span {
+	    background: #eaeaea none repeat scroll 0 0;
+	    height: 4px;
+	    position: absolute;
+	    transition: all 300ms cubic-bezier(0.63, 0.64, 0.3, 1) 0s;
+	    width: 32px;
+	}
+	#sitemenu-icon-launch span.line1 {
+	    top: 0;
+	}
+	#sitemenu-icon-launch span.line2 {
+	    top: 10px;
+	}
+	#sitemenu-icon-launch span.line3 {
+	    top: 20px;
+	}
+	#sitemenu-icon-launch.open .line1 {
+	    top: 12px;
+	    transform: rotate(-45deg);
+	}
+	#sitemenu-icon-launch.open .line2 {
+	    opacity: 0;
+	}
+	#sitemenu-icon-launch.open .line3 {
 	    top: 12px;
 	    transform: rotate(45deg);
 	}

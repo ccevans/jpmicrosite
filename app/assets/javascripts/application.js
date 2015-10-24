@@ -17,4 +17,5 @@
 //= require turbolinks
 //= require_tree .
 //= require jquery.countdown.min
+//= require jquery.backstretch.min
 
