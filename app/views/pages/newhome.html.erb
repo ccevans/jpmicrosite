@@ -171,7 +171,7 @@
 
 				</div>
 				<div class="learnpara">
-					Since Obamacare, getting health insurance is easier and more affordable.  Learn more and share with others. <%= link_to "Make sure you got the right coverage at an affordable price", "#", class: "learnlink" %>
+					Since Obamacare, getting health insurance is easier and more affordable.  Learn more and share with others. <%= link_to "Make sure you got the right coverage at an affordable price", "#", class: "learnlink", id: "linkenroll" %>
 
 				</div>
 
@@ -183,23 +183,40 @@
 			
 					<div id="learninfo">
 
+						<div id="quizstarter">
+							<p>Take our quick quiz to learn more about Obamacare and Health Insurance.  Choose True or False based on the statement provided.</p>
+
+							<div id="startquiznow" onclick="startQuiz();">Start Quiz</div>
+
+
+						</div>
+
+						<div id="quizendbox" class="nodisplay">
+							<p>Congrats on finishing the Quiz.  Enroll with JP Health today to get expert guidance and more info on Health Insurance in 2016.</p>
+
+							<div id="quizenroll">Enroll Now</div>
+
+
+						</div>
+
 						
 
 
 					</div>
 					<div id="answerbox">
-						<div id="truebox" onclick="giveTrue()">
+						<div id="truebox" onclick="giveTrue()" class="notactivated">
 							TRUE
 						</div>
-						<div id="falsebox" onclick="giveFalse()">
+						<div id="falsebox" onclick="giveFalse()" class="notactivated">
 							FALSE
 						</div>
 						<div id="scorebox" class="nodisplay">
-							<div id="scoretext">
-
-							</div>
+							<div id="results"></div>
+							<div id="scoretext"></div>
+							<div id="itemnumber"></div>
 
 							<div id="next" onclick="processQuestion()">Next</div>
+							<div id="retry" onclick="retryQuiz()" class="nodisplay">Retry</div>
 						</div>
 
 						 
@@ -214,10 +231,6 @@
 
 					</div>
 
-						<div class="learncountbox">
-						1/10
-
-						</div>
 				</div>
 			</div>
 		</div>
@@ -301,55 +314,147 @@ var quizQuestion = [
 	{	
 		question: "/assets/jpfinancialquiz1.jpg", 
 		answer: 'false',
+		corrected: "/assets/jpfinancialquiz6.jpg"
 	},
 	{	
 		question: "/assets/jpfinancialquiz2.jpg", 
 		answer: 'false',
+		corrected: "/assets/jpfinancialquiz1.jpg"
 	},
 	{	
 		question: "/assets/jpfinancialquiz3.jpg", 
 		answer: 'true',
+		corrected: "/assets/jpfinancialquiz3.jpg"
 	},
 	{	
 		question: "/assets/jpfinancialquiz4.jpg", 
 		answer: 'true',
+		corrected: "/assets/jpfinancialquiz4.jpg"
 	},
 	{	
 		question: "/assets/jpfinancialquiz5.jpg", 
-		answer: 'true',
+		answer: 'false',
+		corrected: "/assets/jpfinancialquiz9.jpg"
 	},
 	{	
 		question: "/assets/jpfinancialquiz6.jpg", 
 		answer: 'true',
+		corrected: "/assets/jpfinancialquiz6.jpg"
 	},
 	{	
 		question: "/assets/jpfinancialquiz7.jpg", 
 		answer: 'true',
+		corrected: "/assets/jpfinancialquiz7.jpg"
 	},
 	{	
 		question: "/assets/jpfinancialquiz8.jpg", 
 		answer: 'true',
+		corrected: "/assets/jpfinancialquiz8.jpg"
 	},
 	{	
 		question: "/assets/jpfinancialquiz9.jpg", 
 		answer: 'true',
+		corrected: "/assets/jpfinancialquiz9.jpg"
 	},
 	{	
 		question: "/assets/jpfinancialquiz10.jpg", 
-		answer: 'true',
+		answer: 'false',
+		corrected: "/assets/jpfinancialquiz2.jpg"
 	}
 ];
 var arrayImage = ["/assets/jpfinancialquiz1.jpg", "/assets/jpfinancialquiz2.jpg", "/assets/jpfinancialquiz3.jpg", "/assets/jpfinancialquiz4.jpg", "/assets/jpfinancialquiz5.jpg", "/assets/jpfinancialquiz6.jpg", "/assets/jpfinancialquiz7.jpg", "/assets/jpfinancialquiz8.jpg", "/assets/jpfinancialquiz9.jpg", "/assets/jpfinancialquiz10.jpg"];
 
 // score and initial variables
 var currentQuestion = 0;
+var itemleft = 0;
 var score = 0; 
 var clickAnswer = true;
 var scorePercentage = 100;
+var questionResult = '';
 var addImage = document.createElement("img");
-document.getElementById("learninfo").appendChild(addImage); 
-addImage.className = "learnimage";
-addImage.src = quizQuestion[currentQuestion]['question'];
+
+// To disable:    
+document.getElementById('truebox').style.pointerEvents = 'none';
+document.getElementById('falsebox').style.pointerEvents = 'none';
+
+console.log("Hope is Alive");
+
+
+function startQuiz() {
+	document.getElementById("learninfo").appendChild(addImage); 
+	addImage.className = "learnimage";
+	addImage.src = quizQuestion[currentQuestion]['question'];
+	resetBox();
+
+	$("#falsebox").removeClass("notactivated");
+	$("#truebox").removeClass("notactivated");
+	$("#quizstarter").addClass("nodisplay");
+	// To re-enable:
+	document.getElementById('truebox').style.pointerEvents = 'auto'; 
+	document.getElementById('falsebox').style.pointerEvents = 'auto'; 
+}
+
+function retryQuiz() {
+	currentQuestion = 0;
+	itemleft = 0;
+	score = 0; 
+	clickAnswer = true;
+	scorePercentage = 100;
+	questionResult = '';
+
+	document.getElementById("learninfo").appendChild(addImage); 
+	addImage.className = "learnimage";
+	addImage.src = quizQuestion[currentQuestion]['question'];
+	resetBox();
+
+	$("#falsebox").removeClass("nodisplay");
+	$("#truebox").removeClass("nodisplay");
+	$("#falsebox").removeClass("notactivated");
+	$("#truebox").removeClass("notactivated");
+	$("#quizstarter").addClass("nodisplay");
+	$(".learnimage").removeClass("nodisplay");
+	$("#itemnumber").removeClass("nodisplay");
+	$("#scorebox").removeClass("quizfinish");
+	$("#quizendbox").addClass("nodisplay");
+	$("#next").removeClass("nodisplay");
+	$("#retry").addClass("nodisplay");
+	// To re-enable:
+	document.getElementById('truebox').style.pointerEvents = 'auto'; 
+	document.getElementById('falsebox').style.pointerEvents = 'auto';
+
+
+}
+
+function endQuiz() {
+	$(".learnimage").addClass("nodisplay");
+	$("#falsebox").addClass("nodisplay");
+	$("#truebox").addClass("nodisplay");
+	$("#itemnumber").addClass("nodisplay");
+	$("#scorebox").removeClass("nodisplay");
+	$("#scorebox").addClass("quizfinish");
+	scorePercentage = Math.round((score/(currentQuestion + 1))*100);
+	document.getElementById("scoretext").textContent = scorePercentage + "%";
+	itemleft = (currentQuestion + 1);
+	document.getElementById("itemnumber").textContent = itemleft + " / 10";
+
+	$("#quizendbox").removeClass("nodisplay");
+	$("#next").addClass("nodisplay");
+	$("#retry").removeClass("nodisplay");
+
+	if (scorePercentage >= 70) {
+
+		document.getElementById("results").textContent = "Awesome! You passed the quiz.";
+
+	} else {
+
+		document.getElementById("results").textContent = "Sorry. You didn't pass. Give it another try.";
+
+	}
+
+	
+
+
+}
 
 function nextQuestion() {
 	
@@ -372,8 +477,15 @@ function giveTrue() {
 	$("#truebox").addClass("correctBox");
 	$("#falsebox").addClass("nodisplay");
 	$("#scorebox").removeClass("nodisplay");
-	var scorePercentage = (score/(currentQuestion + 1))*100;
-	document.getElementById("scoretext").textContent = scorePercentage;
+	scorePercentage = Math.round((score/(currentQuestion + 1))*100);
+	document.getElementById("scoretext").textContent = scorePercentage + "%";
+	itemleft = (currentQuestion + 1);
+	document.getElementById("itemnumber").textContent = itemleft + " / 10";
+	document.getElementById("results").textContent = questionResult;
+	document.getElementById('truebox').style.pointerEvents = 'none';
+	document.getElementById('falsebox').style.pointerEvents = 'none';
+	replaceImage();
+
 
 }
 
@@ -383,8 +495,14 @@ function giveFalse() {
 	$("#falsebox").addClass("correctBox");
 	$("#truebox").addClass("nodisplay");
 	$("#scorebox").removeClass("nodisplay");
-	var scorePercentage = (score/(currentQuestion + 1))*100;
-	document.getElementById("scoretext").textContent = scorePercentage;
+	scorePercentage = Math.round((score/(currentQuestion + 1))*100);
+	document.getElementById("scoretext").textContent = scorePercentage + "%";
+	itemleft = (currentQuestion + 1);
+	document.getElementById("itemnumber").textContent = itemleft + " / 10";
+	document.getElementById("results").textContent = questionResult;
+	document.getElementById('truebox').style.pointerEvents = 'none';
+	document.getElementById('falsebox').style.pointerEvents = 'none';
+	replaceImage();
 }
 
 function resetBox() {
@@ -393,21 +511,32 @@ function resetBox() {
 	$("#truebox").removeClass("nodisplay");
 	$("#falsebox").removeClass("nodisplay");
 	$("#scorebox").addClass("nodisplay");
-
+	document.getElementById('truebox').style.pointerEvents = 'auto';
+	document.getElementById('falsebox').style.pointerEvents = 'auto';
 }
 
 
 function checkAnswer() {
 	if (quizQuestion[currentQuestion]['answer'] == clickAnswer) {
-		console.log('Question '
-			 + (currentQuestion + 1) + 'is correct');
-		$("#truebox").addClass("correctBox");
-		score++;
+		if (quizQuestion[currentQuestion]['answer'] == "true") {
+				score++;
+				questionResult = "Correct! The statement is true."
 
+			} else {
+				score++;
+				questionResult = "Correct! It is false; view the correct one."
+			}
 
 	} else {
-		console.log('Question '
-			 + (currentQuestion + 1) + 'is incorrect');
+			if (quizQuestion[currentQuestion]['answer'] == "true") {
+
+				questionResult = "Incorrect! The statement is true."
+
+			} else {
+
+				questionResult = "Incorrect! It is false; view the correct one"
+			}
+
 	}
 
 
@@ -423,6 +552,7 @@ function processQuestion() {
 
              if (currentQuestion == quizQuestion.length) {
                  console.log("Quiz End")
+                 endQuiz();
              } else {
 
                  nextQuestion();
@@ -435,6 +565,10 @@ function processQuestion() {
 //place image in array to html box
 function placeImage() {
 	addImage.src = quizQuestion[currentQuestion]['question'];
+}
+
+function replaceImage() {
+	addImage.src = quizQuestion[currentQuestion]['corrected'];
 }
 
 
@@ -467,6 +601,18 @@ function placeImage() {
 		$("#sitemenu-icon").addClass("open");
 	});
 	$("#bottomboxenroll").click(function(){
+		$("#hiddenform").addClass("active");
+		$("#wrapperform").addClass("active");
+		$("#sitemenu-icon").addClass("active");
+		$("#sitemenu-icon").addClass("open");
+	});
+	$("#quizenroll").click(function(){
+		$("#hiddenform").addClass("active");
+		$("#wrapperform").addClass("active");
+		$("#sitemenu-icon").addClass("active");
+		$("#sitemenu-icon").addClass("open");
+	});
+	$("#linkenroll").click(function(){
 		$("#hiddenform").addClass("active");
 		$("#wrapperform").addClass("active");
 		$("#sitemenu-icon").addClass("active");
