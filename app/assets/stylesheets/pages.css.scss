@@ -103,12 +103,23 @@ form.simple_form.contact div.form-group select option {background-color: rbga(0,
 .learnquiz {position: relative; height: 400px; width: 400px; margin: 0; background-color: #fff;}
 #learninfo {position: relative; width: 100%; height: auto; margin: 0; padding: 0;}
 #answerbox {position: absolute; top: 0; right: -100px; width: 90px; height: 400px; padding: 0; margin: 0;}
-#truebox {position: relative; width: 100px; height: 195px; text-align: center; font-size: 24px; padding: 88px 0; color: #fff; vertical-align: center; background-color:rgba(33,111,144,1);}
-#falsebox {position: relative; width: 100px; height: 195px; margin-top: 10px; text-align: center; font-size: 24px; padding: 88px 0; color: #fff; vertical-align: center; background-color:rgba(184,39,113,1);}
+#truebox {position: relative; width: 100px; height: 195px; text-align: center; font-size: 24px; line-height: 24px; padding: 85.5px 0; color: #fff; vertical-align: center; background-color:rgba(33,111,144,1); cursor: pointer; transition: all 500ms ease 0s;}
+#falsebox {position: relative; width: 100px; height: 195px; margin-top: 10px; text-align: center; font-size: 24px; line-height: 24px; padding: 85.5px 0; color: #fff; vertical-align: center; background-color:rgba(184,39,113,1); cursor: pointer; transition: all 500ms ease 0s;}
 .learnmorebox {position: absolute; bottom: -30px; width: 100%; height: auto;}
 .sharebox {position: relative; font-size: 24px; color: #000; font-weight: 400;}
 .learncountbox {position: absolute; bottom: -30px; right: -100px; color: #e8eae9; font-size: 24px; font-style: italic; font-weight: 400;}
 .quiztitle {position: relative; font-size: 40px; color: #fff; text-align: center; width: 100%;}
+.learnimage {position: relative; width: 100%; height: auto; margin: 0; padding: 0;}
+
+#truebox:hover {opacity: .7;}
+#falsebox:hover {opacity: .7;}
+#truebox.correctBox {height: 44px; padding: 10px 0; cursor: default;}
+#falsebox.correctBox {height: 44px; padding: 10px 0; margin-top:0; cursor: default;}
+#truebox.correctBox:hover {opacity: 1;}
+#falsebox.correctBox:hover {opacity: 1;}
+#scorebox {position: relative; width: 100px; height: 346px; margin-top: 10px; text-align: left; font-size: 18px; line-height: 20px; padding: 10px 2px; color: 000; background-color:rgba(255,255,255,1); transition: all 500ms ease 0s;}
+#scoretext {color: #000; text-align: center; }
+#next {position: absolute; bottom: 0; left: 0; width: 100%; text-align: center; cursor: pointer; background-color: rgba(0,0,0,1); color: #fff; padding: 10px 0;}
 
 // quote layout
 #quotelayout {position: relative; float: left;  width: 100%; min-height: 100%; height: auto; margin: 0; padding: 75px 0 25px 0;}

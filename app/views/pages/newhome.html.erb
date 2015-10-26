@@ -182,17 +182,27 @@
 				<div class="learnquiz">
 			
 					<div id="learninfo">
+
 						
 
 
 					</div>
 					<div id="answerbox">
-						<div id="truebox">
+						<div id="truebox" onclick="giveTrue()">
 							TRUE
 						</div>
-						<div id="falsebox">
+						<div id="falsebox" onclick="giveFalse()">
 							FALSE
 						</div>
+						<div id="scorebox" class="nodisplay">
+							<div id="scoretext">
+
+							</div>
+
+							<div id="next" onclick="processQuestion()">Next</div>
+						</div>
+
+						 
 
 					</div>
 
@@ -281,18 +291,153 @@
  });
 </script>
 
+
+
 <script>
+
+
 // Get an array of statements (images)
-var arrayImage = ["jpfinancialquiz1.jpg", "jpfinancialquiz2.jpg", "jpfinancialquiz3.jpg", "jpfinancialquiz4.jpg", "jpfinancialquiz5.jpg", "jpfinancialquiz6.jpg", "jpfinancialquiz7.jpg", "jpfinancialquiz8.jpg", "jpfinancialquiz9.jpg", "jpfinancialquiz10.jpg"];
-console.log(arrayImage[0]);
+var quizQuestion = [
+	{	
+		question: "/assets/jpfinancialquiz1.jpg", 
+		answer: 'false',
+	},
+	{	
+		question: "/assets/jpfinancialquiz2.jpg", 
+		answer: 'false',
+	},
+	{	
+		question: "/assets/jpfinancialquiz3.jpg", 
+		answer: 'true',
+	},
+	{	
+		question: "/assets/jpfinancialquiz4.jpg", 
+		answer: 'true',
+	},
+	{	
+		question: "/assets/jpfinancialquiz5.jpg", 
+		answer: 'true',
+	},
+	{	
+		question: "/assets/jpfinancialquiz6.jpg", 
+		answer: 'true',
+	},
+	{	
+		question: "/assets/jpfinancialquiz7.jpg", 
+		answer: 'true',
+	},
+	{	
+		question: "/assets/jpfinancialquiz8.jpg", 
+		answer: 'true',
+	},
+	{	
+		question: "/assets/jpfinancialquiz9.jpg", 
+		answer: 'true',
+	},
+	{	
+		question: "/assets/jpfinancialquiz10.jpg", 
+		answer: 'true',
+	}
+];
+var arrayImage = ["/assets/jpfinancialquiz1.jpg", "/assets/jpfinancialquiz2.jpg", "/assets/jpfinancialquiz3.jpg", "/assets/jpfinancialquiz4.jpg", "/assets/jpfinancialquiz5.jpg", "/assets/jpfinancialquiz6.jpg", "/assets/jpfinancialquiz7.jpg", "/assets/jpfinancialquiz8.jpg", "/assets/jpfinancialquiz9.jpg", "/assets/jpfinancialquiz10.jpg"];
+
+// score and initial variables
+var currentQuestion = 0;
+var score = 0; 
+var clickAnswer = true;
+var scorePercentage = 100;
+var addImage = document.createElement("img");
+document.getElementById("learninfo").appendChild(addImage); 
+addImage.className = "learnimage";
+addImage.src = quizQuestion[currentQuestion]['question'];
+
+function nextQuestion() {
+	
+	placeImage();
+	resetBox();
+
+}
+
 //create quiz loop
 
+var arrayLength = quizQuestion.length;
+for (var i = 0; i < arrayLength; i++) {
+	    console.log(quizQuestion[i]['question']);
+	    //Do something
+}
+
+function giveTrue() {
+	clickAnswer = "true";
+	checkAnswer();
+	$("#truebox").addClass("correctBox");
+	$("#falsebox").addClass("nodisplay");
+	$("#scorebox").removeClass("nodisplay");
+	var scorePercentage = (score/(currentQuestion + 1))*100;
+	document.getElementById("scoretext").textContent = scorePercentage;
+
+}
+
+function giveFalse() {
+	clickAnswer = "false";
+	checkAnswer();
+	$("#falsebox").addClass("correctBox");
+	$("#truebox").addClass("nodisplay");
+	$("#scorebox").removeClass("nodisplay");
+	var scorePercentage = (score/(currentQuestion + 1))*100;
+	document.getElementById("scoretext").textContent = scorePercentage;
+}
+
+function resetBox() {
+	$("#falsebox").removeClass("correctBox");
+	$("#truebox").removeClass("correctBox");
+	$("#truebox").removeClass("nodisplay");
+	$("#falsebox").removeClass("nodisplay");
+	$("#scorebox").addClass("nodisplay");
+
+}
+
+
+function checkAnswer() {
+	if (quizQuestion[currentQuestion]['answer'] == clickAnswer) {
+		console.log('Question '
+			 + (currentQuestion + 1) + 'is correct');
+		$("#truebox").addClass("correctBox");
+		score++;
+
+
+	} else {
+		console.log('Question '
+			 + (currentQuestion + 1) + 'is incorrect');
+	}
+
+
+
+}
+
+function processQuestion() {
+
+         //alert(choice);
+         currentQuestion++;
+          //alert(currentquestion);
+         $("#submitbutton").hide();
+
+             if (currentQuestion == quizQuestion.length) {
+                 console.log("Quiz End")
+             } else {
+
+                 nextQuestion();
+             }
+
+ }
+
+
+
 //place image in array to html box
-//var image = arrayImage[0];
+function placeImage() {
+	addImage.src = quizQuestion[currentQuestion]['question'];
+}
 
-//console.log(image2);
 
-//$('#learninfo').prepend()
 //User clicks on answer
 
 //Button interactions
