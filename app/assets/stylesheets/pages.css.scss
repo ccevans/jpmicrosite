@@ -421,8 +421,14 @@ form.simple_form.contact div.form-group select option {background-color: rbga(0,
 }
 
 @media screen and (max-width: 500px){
+    // navtop
 
-        // learn layout
+    .navtop {position: fixed; top: 0; left: 0; z-index: 100; width: 100%; padding: 10px 0 0 0; margin: 0; background-color: #fff;}
+    .navtop ul {position: relative; height: auto; width: 100%; max-width: 800px; list-style-type: none; margin: 0; padding: 0;}
+    .navtop ul li {position: relative; float: left; text-align: center; width: 25%; height: auto; padding: 0; margin: 0; background-color: #fff; cursor: pointer;}
+    .navtop ul li span {position: relative; color: #e8eae9; width: 100%; text-align: center; font-size: 16px; line-height: 24px; padding: 10px auto; margin: 10px 0; }
+
+    // learn layout
     #learnlayout {position: relative; float: left;  width: 100%; min-height: 100%; height: auto; margin: 0; padding: 25px 0% 25px 0%;}
     .learnbox {position: relative; float: left; text-align: left; width: 100%; margin: 0px 0 25px 0; padding: 0; font-family: 'Century Gothic', Sans-Serif; font-weight: 700;}
     .learnheader {position: relative; text-align: left; width: 100%; padding: 0 5%; font-size: 30px; line-height: 30px; color: #fff;}
