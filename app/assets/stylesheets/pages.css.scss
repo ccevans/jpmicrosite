@@ -423,14 +423,14 @@ form.simple_form.contact div.form-group select option {background-color: rbga(0,
 @media screen and (max-width: 500px){
 
         // learn layout
-    #learnlayout {position: relative; float: left;  width: 100%; min-height: 100%; height: auto; margin: 0; padding: 25px 5% 25px 5%;}
+    #learnlayout {position: relative; float: left;  width: 100%; min-height: 100%; height: auto; margin: 0; padding: 25px 0% 25px 0%;}
     .learnbox {position: relative; float: left; text-align: left; width: 100%; margin: 0px 0 25px 0; padding: 0; font-family: 'Century Gothic', Sans-Serif; font-weight: 700;}
-    .learnheader {position: relative; text-align: left; width: 100%; font-size: 30px; line-height: 30px; color: #fff;}
+    .learnheader {position: relative; text-align: left; width: 100%; padding: 0 5%; font-size: 30px; line-height: 30px; color: #fff;}
     .smallword2 {font-size: 18px; font-weight: 400;}
     .bigword2 {font-size: 60px; line-height: 60px;}
-    .learnpara {position: relative; text-align: left; color: #000; margin: 10px 0; font-size: 18px; line-height: 20px; font-weight: 400;}
+    .learnpara {position: relative; text-align: left; color: #000; padding: 0 5%; margin: 10px 0; font-size: 18px; line-height: 20px; font-weight: 400;}
     .learnlink {color: #b82771; text-decoration: underline;}
-    .learnquizbox {display: none; position: relative; height: 240px; width: 300px; margin: 25px 0; padding: 0 0 0 0;}
+    .learnquizbox {position: relative; height: 240px; width: 300px; margin: 25px 0; padding: 0 0 0 0;}
     .learnquiz {position: relative; height: 240px; width: 240px; margin: 0; background-color:rgba(192,28,115,1);}
     #learninfo {position: relative; width: 100%; height: auto; margin: 0; padding: 0;}
     #answerbox {position: absolute; top: 0; right: -60px; width: 54px; height: 240px; padding: 0; margin: 0;}
