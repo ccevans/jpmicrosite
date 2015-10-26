@@ -245,11 +245,11 @@ form.simple_form.contact div.form-group select option {background-color: rbga(0,
 	// form css
 
 	form.simple_forml.contact {width: 100%; margin: 0 0%; font-family: 'Century Gothic', Sans-Serif;}
-	form.simple_form.contact div.input label {display: none; min-width: 20%; color: #fff; font-family: 'Century Gothic', Sans-Serif; font-weight: 700; font-size: 24px; line-height: 24px;}
-	form.simple_form.contact div.input input {margin: 15px 0; font-family: 'Century Gothic', Sans-Serif; width: 100%; background-color: rgba(0,113,152,0); border: none; border-bottom: 2px solid #fff; font-size: 24px; line-height: 24px; color: #fff;}
-	form.simple_form.contact div.form-group {text-align: center; font-size: 24px; color: #fff; font-family: 'Century Gothic', Sans-Serif;}
+	form.simple_form.contact div.input label {display: none; min-width: 20%; color: #fff; font-family: 'Century Gothic', Sans-Serif; font-weight: 700; font-size: 20px; line-height: 20px;}
+	form.simple_form.contact div.input input {margin: 15px 0; font-family: 'Century Gothic', Sans-Serif; width: 100%; background-color: rgba(0,113,152,0); border: none; border-bottom: 2px solid #fff; font-size: 20px; line-height: 20px; color: #fff;}
+	form.simple_form.contact div.form-group {text-align: center; font-size: 20px; color: #fff; font-family: 'Century Gothic', Sans-Serif;}
 	form.simple_form.contact div.form-group select {border: none; background-color: rgba(0,0,0,0); border-bottom: 2px solid #fff;}
-	form.simple_form.contact div input.btn.btn.btn-primary {font-size: 24px; border-radius: 0; padding: 5px 10px; background-color: rgba(255, 255, 255, 1); color: #007198;}
+	form.simple_form.contact div input.btn.btn.btn-primary {font-size: 20px; border-radius: 0; padding: 5px 10px; background-color: rgba(255, 255, 255, 1); color: #007198;}
 	
 
 
@@ -311,7 +311,7 @@ form.simple_form.contact div.form-group select option {background-color: rbga(0,
 	#truebox.correctBox {font-size: 18px; line-height: 18px; height: 38px; padding: 10px 0; cursor: default;}
 	#falsebox.correctBox {font-size: 18px; line-height: 18px; height: 38px; padding: 10px 0; margin-top:0; cursor: default;}
 	#scorebox {position: relative; width: 60px; height: 196px; margin-top: 6px; text-align: left; font-size: 12px; line-height: 14px; padding: 2px 2px; color: 000; background-color:rgba(255,255,255,1); transition: all 500ms ease 0s;}
-	#scoretext {color: #000; text-align: center; font-size: 20px; padding: 10px 0;}
+	#scoretext {text-align: center; font-size: 20px; padding: 10px 0;}
 	#itemnumber {text-align: center; padding: 5px 0; width: 100%; font-weight: 400;};
 	#results {text-align: center; padding: 5px 0; width: 100%; font-weight: 400;}
 	#next {position: absolute; bottom: 0; left: 0; width: 100%; font-size: 16px; line-height: 16px; text-align: center; cursor: pointer; background-color: rgba(0,0,0,1); color: #fff; padding: 10px 0;}
@@ -377,8 +377,8 @@ form.simple_form.contact div.form-group select option {background-color: rbga(0,
 	    display: inline-block;
 	    height: 24px;
 	    position: fixed;
-	    right: 40px;
-	    top: 40px;
+	    right: 20px;
+	    top: 20px;
 	    width: 32px;
 	    z-index: 10000;
 	}
