@@ -463,13 +463,6 @@ function nextQuestion() {
 
 }
 
-//create quiz loop
-
-var arrayLength = quizQuestion.length;
-for (var i = 0; i < arrayLength; i++) {
-	    console.log(quizQuestion[i]['question']);
-	    //Do something
-}
 
 function giveTrue() {
 	clickAnswer = "true";
@@ -545,18 +538,14 @@ function checkAnswer() {
 
 function processQuestion() {
 
-         //alert(choice);
-         currentQuestion++;
-          //alert(currentquestion);
-         $("#submitbutton").hide();
-
-             if (currentQuestion == quizQuestion.length) {
-                 console.log("Quiz End")
-                 endQuiz();
-             } else {
-
-                 nextQuestion();
-             }
+         if ((currentQuestion+1) == quizQuestion.length) {
+            console.log("Quiz End");
+            endQuiz();
+         } else {
+         	currentQuestion++;
+         	console.log(currentQuestion);
+            nextQuestion();
+         }
 
  }
 
