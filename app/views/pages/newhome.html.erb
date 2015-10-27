@@ -281,10 +281,10 @@
 	<div class="navfooter">
 
 		<div class="contacttoday">
-			704.675.727 | 1.800.481.1354
+			704.675.7270 | 1.800.481.1354
 		</div>
 		<div class="sitedesign">
-			Site by <%= link_to '330Monday', 'http://www.330monday.com/' %>.
+			 <%= link_to 'Site by 330Monday', 'http://www.330monday.com/' %>.
 		</div>	
 
 	</div>
@@ -513,21 +513,21 @@ function checkAnswer() {
 	if (quizQuestion[currentQuestion]['answer'] == clickAnswer) {
 		if (quizQuestion[currentQuestion]['answer'] == "true") {
 				score++;
-				questionResult = "Correct! It is true."
+				questionResult = "Answer is Correct! Fact is true."
 
 			} else {
 				score++;
-				questionResult = "Correct! It is false; view the correct one."
+				questionResult = "Answer is Correct! Fact is false; view the correct fact."
 			}
 
 	} else {
 			if (quizQuestion[currentQuestion]['answer'] == "true") {
 
-				questionResult = "Incorrect! It is true."
+				questionResult = "Answer is Incorrect! Fact is true."
 
 			} else {
 
-				questionResult = "Incorrect! It is false; view the correct one"
+				questionResult = "Answer is Incorrect! Fact is false; view the correct fact."
 			}
 
 	}
