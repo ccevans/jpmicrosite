@@ -93,8 +93,11 @@ form.simple_form.contact div.form-group select option {background-color: rbga(0,
 .workspic2 {position: relative; width: 100%; height: auto; float: left;}
 .handspara2 {position: relative; color: #fff; font-size: 36px; line-height: 38px; width: 80%; margin: 10px 10%; font-family: 'Century Gothic', Sans-Serif; font-weight: 400;}
 .hands3steps {position: relative; color: #000; font-family: "verveine",sans-serif; font-size: 48px; line-height: 48px; text-align: center;}
-.workspara {font-size: 48px; line-height: 48px; text-align: center; width: 100%; font-family: 'Century Gothic', Sans-Serif;}
+.workspara {font-size: 36px; line-height: 38px; text-align: center; width: 100%; font-family: 'Century Gothic', Sans-Serif;}
 .worksbox {position: relative; float: left; width: 33.33%;}
+.handslink {color: #589fb9; text-decoration: underline;}
+.handslink:hover {color: #000; text-decoration: none;}
+
 
 // learn layout
 #learnlayout {position: relative; float: left;  width: 100%; min-height: 100%; height: auto; margin: 0; padding: 75px 5% 25px 5%;}
@@ -104,6 +107,7 @@ form.simple_form.contact div.form-group select option {background-color: rbga(0,
 .bigword2 {font-size: 80px;}
 .learnpara {position: relative; text-align: left; color: #000; margin: 10px 0; font-size: 30px; line-height: 32px; font-weight: 400;}
 .learnlink {color: #b82771; text-decoration: underline;}
+.learnlink:hover {color: #000; text-decoration: none;}
 .learnquizbox {position: relative; height: 400px; width: 500px; margin: 50px auto; padding: 0 0 0 0;}
 .learnquiz {position: relative; height: 400px; width: 400px; margin: 0; background-color: rgba(184,39,113,1);}
 #learninfo {position: relative; width: 100%; height: auto; margin: 0; padding: 0;}

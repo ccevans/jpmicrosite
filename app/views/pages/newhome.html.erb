@@ -87,7 +87,7 @@
 			<div class="handsbox">
 
 				<div class="handspara2">
-					It's all about allowing you to compare health insurance plans side-by-side and HELPING YOU choose the one that fits your needs and your budget. If this is what you are looking for, CONTACT US - it is what we do.
+					It's all about allowing you to compare health insurance plans side-by-side and HELPING YOU choose the one that fits your needs and your budget. If this is what you are looking for, <%= link_to "CONTACT US", "#", class: "handslink", id: "linkcontact" %>  - it is what we do.
 				</div>
 
 				<div id="createimage" class="handsheader">
@@ -265,7 +265,8 @@
 
 			<div class="deadlinebox">
 			<div class="deadlinebox2">
-				<div class="deadline">
+				<div class="deadline"> 
+					Registration begins Nov 1, 2015</br>
 					Registration deadline is
 					<span class="deadlinedate">Jan 31, 2016</span>
 				</div>
@@ -605,6 +606,13 @@ function replaceImage() {
 		$('body').addClass("noscroll");
 	});
 	$("#linkenroll").click(function(){
+		$("#hiddenform").addClass("active");
+		$("#wrapperform").addClass("active");
+		$("#sitemenu-icon").addClass("active");
+		$("#sitemenu-icon").addClass("open");
+		$('body').addClass("noscroll");
+	});
+	$("#linkcontact").click(function(){
 		$("#hiddenform").addClass("active");
 		$("#wrapperform").addClass("active");
 		$("#sitemenu-icon").addClass("active");
