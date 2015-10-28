@@ -12,7 +12,7 @@ class Contact < MailForm::Base
     {
       :subject => "JP Health Insurance Contact Form",
       :to => "ccevans1@gmail.com",
-      :bcc => "hello@rhymesanddesigns.com",
+      :cc => "cc@ccevans.com",
       :from => %("#{name}" <#{email}>)
     }
   end
