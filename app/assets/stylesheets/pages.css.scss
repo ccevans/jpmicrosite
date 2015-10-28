@@ -93,10 +93,15 @@ form.simple_form.contact div.form-group select option {background-color: rbga(0,
 .workspic2 {position: relative; width: 100%; height: auto; float: left;}
 .handspara2 {position: relative; color: #fff; font-size: 36px; line-height: 38px; width: 80%; margin: 10px 10%; font-family: 'Century Gothic', Sans-Serif; font-weight: 400;}
 .hands3steps {position: relative; color: #000; font-family: "verveine",sans-serif; font-size: 48px; line-height: 48px; text-align: center;}
-.workspara {font-size: 36px; line-height: 38px; text-align: center; width: 100%; font-family: 'Century Gothic', Sans-Serif;}
+.workspara {padding: 5px; font-size: 36px; line-height: 38px; text-align: center; width: 100%; font-family: 'Century Gothic', Sans-Serif;}
 .worksbox {position: relative; float: left; width: 33.33%;}
 .handslink {color: #589fb9; text-decoration: underline;}
 .handslink:hover {color: #000; text-decoration: none;}
+
+.connecthands {width: 100%; position: relative; text-align: center;}
+.connecthands h1 {font-size: 18px; text-align: center; color: #000; margin: 10px 0; }
+.connecthands i {font-size: 36px; margin: 10px; color: #000;}
+.connecthands i:hover {font-size: 36px; margin: 10px; color: #fff;}
 
 
 // learn layout
@@ -194,6 +199,10 @@ form.simple_form.contact div.form-group select option {background-color: rbga(0,
 
 #hiddenform2 h1 {text-align: center; font-size: 48px; color: #000;}
 #hiddenform2 h2 {text-align: center; font-size: 36px; color: #000;}
+
+#hiddenform2 div {width: 100%; position: relative; text-align: center;}
+#hiddenform2 div i {font-size: 36px; margin: 10px; color: #000;}
+#hiddenform2 div i:hover {font-size: 36px; margin: 10px; color: #fff;}
 
 // closed button 
 #sitemenu-icon {display: none;}
