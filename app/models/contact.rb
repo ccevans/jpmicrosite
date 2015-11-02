@@ -11,7 +11,7 @@ class Contact < MailForm::Base
   def headers
     {
       :subject => "JP Health Insurance Contact Form",
-      :to => ["contact@jpfinancialgroupllc.com", "chamiesemarion@gmail.com", "ccevans1@gmail.com"],
+      :to => ["contact@jpfinancialgroupllc.com", "chamiesemarion@gmail.com", "cc@ccevans.com"],
       :from => %("#{name}" <#{email}>)
     }
   end
