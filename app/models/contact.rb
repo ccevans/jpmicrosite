@@ -4,7 +4,7 @@ class Contact < MailForm::Base
   attribute :phone,     :valideate => /\A(\d{10}|\(?\d{3}\)?[-. ]\d{3}[-.]\d{4})\z/
      
   attribute :nickname,  :captcha  => true
-  attribute :time 
+  attribute :status 
 
   # Declare the e-mail headers. It accepts anything the mail method
   # in ActionMailer accepts.
